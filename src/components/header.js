@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Jumbotron, Button } from 'react-bootstrap';
+import { Jumbotron, Navbar, MenuItem, Nav, NavItem, NavDropdown } from 'react-bootstrap';
 
 
 const Header = () => (
