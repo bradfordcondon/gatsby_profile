@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Module showcase"
-excerpt_separator: 
+excerpt_separator:
 date: 2018-06-08
-tags: 
+tags:
  - drupal
  - tripal
  - jekyll
@@ -11,12 +11,7 @@ tags:
 
 This week I made a [super simple Jekyll-powered site to show off the modules I've developed for Tripal](https://statonlab.github.io/hardwoods_tripal_showcase/)!
 
-<a href="https://statonlab.github.io/hardwoods_tripal_showcase/">
 ![Showcase Image](/img/tripal_showcase.png)
-</a>
-
-
-
 
 ## Overview
 
@@ -26,7 +21,8 @@ I use Jekyll's header system to define a few variables for each post: the showca
 
 The below markdown file (located in `_posts/`) describes a single module: Tripal Alchemist.  
 
-```md
+```markdown
+
 ---
 layout: post
 title:  "Tripal Alchemist"
@@ -53,4 +49,3 @@ Watch a video of the [module in action on youtube](https://www.youtube.com/watch
 ```
 
 [The code is up on Github](https://github.com/statonlab/hardwoods_tripal_showcase) so feel free to adapt it to your own needs.
-

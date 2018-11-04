@@ -1,13 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Jumbotron, Button } from 'react-bootstrap';
+
+
 const Header = () => (
-  <div
-    style={{
-      background: '#f5f5f5',
-      marginBottom: '3rem',
-      borderBottom: '2px solid #e6e6e6',
-    }}
-  >
+  <Jumbotron>
     <div
       style={{
         margin: '0 auto',
@@ -22,11 +19,12 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Bradford Condon
+          Bradford Condon, PhD
         </Link>
       </h1>
+      <span></span>
     </div>
-  </div>
+    </Jumbotron>
 );
 
 export default Header
