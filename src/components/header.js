@@ -1,7 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Jumbotron, Navbar, MenuItem, Nav, NavItem, NavDropdown } from 'react-bootstrap';
-
+import {
+  Jumbotron,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  Button
+} from "reactstrap";
 
 const Header = () => (
   <Jumbotron>
@@ -12,16 +20,16 @@ const Header = () => (
         padding: '1.45rem 1.0875rem',
       }}
    >
-     <h1 style={{margin: 0, textAlign: 'center',fontSize: '18px'}}>
+       <h1 className="display-3"> Bradford Condon, PhD</h1>
+       <p className="lead">Bionformatics, Data Science, Web & Mobile Development</p>
+
         <Link to="/"
           style={{
             color: 'black',
             textDecoration: 'none',
           }}
         >
-          Bradford Condon, PhD
         </Link>
-      </h1>
       <span></span>
     </div>
     </Jumbotron>

@@ -2,9 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+//import "font-awesome/scss/font-awesome.scss";
+import '../layout/bootstrap.min.css';
 
 import Header from './header'
-import './layout.css'
+import '../layout/theme.scss'
+import "../layout/index.scss";
+import "../layout/global.scss";
 
 const Layout = ({ children }) => (
   <StaticQuery
