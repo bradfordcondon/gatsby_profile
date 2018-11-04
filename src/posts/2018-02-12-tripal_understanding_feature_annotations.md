@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tripal Country: Chado Feature Annotations"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2018-02-12
 tags: 
  - drupal
@@ -19,7 +19,7 @@ Welcome to Tripal Country!
 
 Tripal feature annotations might be a little unintuitive, especially for non-biologists.  This guide is to solidify my own knowledge of what goes where and why: hopefully it will be helpful to some developers as well.
 
-<!--more-->
+
 
 ## Executive Summary
 

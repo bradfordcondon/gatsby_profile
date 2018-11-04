@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Software Carpentry TakeAways"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2017-10-05
 tags:
   - education
@@ -16,7 +16,7 @@ Looking forward to teaching my first workshop in the next few months!
 ![Data Carpentry](/img/carpentry/d_carp.png) ![Software Carpentry](/img/carpentry/s_carp.png)
 
 
- <!--more-->
+ 
  
 
 # Teaching Techniques

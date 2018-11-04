@@ -2,7 +2,7 @@
 layout: post
 title: Understanding Discovar output
 date: 2017-07-15
-excerpt_separator: <!--more-->
+excerpt_separator: 
 tags:
   - bioinformatics
   - next-generation-sequencing
@@ -21,7 +21,7 @@ DISCOVAR is a new genome assembler and variant caller developed by the broad ins
 
 The final output assembly will take the form of `OUT_HEAD.final.*`, where `OUT_HEAD` is set by the user.  Below let's assume we've set `OUT_HEAD` to out.
 
-<!--more-->  
+  
 
 #### Intermediate assemblies
 

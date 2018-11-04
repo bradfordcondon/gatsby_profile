@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tripal best practices"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2018-03-05
 tags: 
  - drupal
@@ -15,7 +15,7 @@ Welcome to Tripal Country!
 
 Today I'm sharing my suggestions on how to set up your module.
 
-<!--more-->
+
 
 
 # For your database

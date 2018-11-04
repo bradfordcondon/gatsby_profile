@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "D3 part three: Nesting"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 custom_js: d3_graph_3.js
 date: 2018-01-17
 tags: 
@@ -18,7 +18,7 @@ In the [previous post](/2017/12/31/d3_part2_flipping/), we learned about using s
 
 In this post I want to address how to **nest** data with D3.  We will use the nest method to automatically sort our samples by property, and we'll use multiple x-scales to group them along the x-axis.
 
-<!--more-->
+
 
 ><div id="plot_previous"></div>
 >Our graph at the end of the previous section.

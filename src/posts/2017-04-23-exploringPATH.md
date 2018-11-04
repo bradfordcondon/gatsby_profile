@@ -2,7 +2,7 @@
 layout: post
 title: PATH, a guide to finding one's way
 date: 2017-04-23
-excerpt_separator: <!--more-->
+excerpt_separator: 
 tags:
   - bioinformatics
   - ukblast
@@ -15,7 +15,7 @@ These exercises were developed for Dr. Mark Farman at the University of Kentucky
 
 UK-BLAST is a bioinformatics working group for undergraduate researchers.  In small labs, students often tackle the bioinformatician role in with little to no technical guidance.  The group may not have anyone with a computer science background, or the task may be beyond the skills of current personnel.  In these cases, a working group headed by a technical mentor (myself) allows students to bypass some of the pitfalls and headaches associated with learning computer science all alone.
 
-<!--more-->
+
 
 # PATH: A guide to finding one's way
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Moving to Jekyll"
 date: 2017-04-09
-excerpt_separator: <!--more-->
+excerpt_separator: 
 ---
 
 ## Switching to Jekyll
@@ -19,7 +19,7 @@ It's pretty win-win.
 
 If you're looking to try this out for yourself, you'll want Ruby/RVM, Jekyll, and github set up.
 
-<!--more-->
+
 
 ## Migrating my old Wordpress posts
 

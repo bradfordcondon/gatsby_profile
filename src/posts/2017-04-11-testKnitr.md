@@ -4,7 +4,7 @@ author: "Bradford Condon"
 layout: post
 date: 2017-04-11
 output: html_document
-excerpt_separator: <!--more-->
+excerpt_separator: 
 ---
 
 
@@ -25,7 +25,7 @@ require(knitr)
 attach(mtcars)
 ```
 
-<!--more-->
+
 
 
 ## Do some plots

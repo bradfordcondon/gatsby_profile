@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Upcoming Software Carpentry Workshop: December 18th & 19th"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2017-11-27
 tags:
   - education

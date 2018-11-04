@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Testing in Tripal Core"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2018-05-02
 tags: 
  - drupal
@@ -17,7 +17,7 @@ This guide is for developers looking to contribute code to the core Tripal proje
 
 For a basic introduction of Tripal Testing, please see the [Test Suite repo](https://github.com/statonlab/TripalTestSuite).
 
-<!--more-->
+
 
 ### Installation
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Documentation with Read the Docs"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2018-08-26
 tags: 
  - drupal
@@ -15,7 +15,7 @@ This week, we'll be moving the Tripal documentation over to ReadTheDocs.  I've a
 This post will talk about the reasons for this decision, and a quick "how to" guide.
 
 
-<!--more-->
+
 
 
 ## What is ReadTheDocs?

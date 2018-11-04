@@ -2,7 +2,7 @@
 layout: post
 title: "Software and Data Carpentry"
 date: 2017-09-25
-excerpt_separator: <!--more-->
+excerpt_separator: 
 tags:
   - education
   - genomics
@@ -17,7 +17,7 @@ This week(September 25th & 26th 2017), I will be certified as a Software and Dat
 
 
 
-<!--more-->
+
 
 [Software Carpentry](https://software-carpentry.org/lessons/) and its sister organisation [Data Carpentry](http://www.datacarpentry.org/) are really impressive.  All of their lessons are on GitHub, so you can access them for free, contribute, or see older versions.  If you are an instructor, you'd be crazy not to at least look at the lessons.  You can use them in your own class, for free, under a [Creative Commons - Attribution License](https://software-carpentry.org/license/)!  Not only that but there are video recordings of the lessons available online.
 

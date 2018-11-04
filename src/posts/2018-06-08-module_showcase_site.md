@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Module showcase"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2018-06-08
 tags: 
  - drupal
@@ -15,7 +15,7 @@ This week I made a [super simple Jekyll-powered site to show off the modules I'v
 ![Showcase Image](/img/tripal_showcase.png)
 </a>
 
-<!--more-->
+
 
 
 ## Overview

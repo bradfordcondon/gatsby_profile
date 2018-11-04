@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to BLAST
 date: 2017-05-03
-excerpt_separator: <!--more-->
+excerpt_separator: 
 tags:
   - bioinformatics
   - ukblast
@@ -15,7 +15,7 @@ This tutorial was developed for Dr. Mark Farman at the University of Kentucky fo
 
 UK-BLAST is a bioinformatics working group for undergraduate researchers.  In small labs, students often tackle the bioinformatician role in with little to no technical guidance.  The group may not have anyone with a computer science background, or the task may be beyond the skills of current personnel.  In these cases, a working group headed by a technical mentor (myself) allows students to bypass some of the pitfalls and headaches associated with learning computer science all alone.
 
-<!--more-->
+
 
 
 ## What is BLAST?

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tripal Country: Manually Creating New Bundle Types"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2018-02-01
 tags: 
  - drupal
@@ -18,7 +18,7 @@ Welcome to Tripal Country!
 
 This is a short guide to demonstrate how to create new bundle types with Chado storage in Tripal 3. It was originally written as instructions for my [Tripal Alchemist module](https://github.com/statonlab/tripal_alchemist/).  There is a similar guide [on tripal.info](http://tripal.info/tutorials/v3.x/content-types) which you can also review.
 
-<!--more-->
+
 
 ## Quick Guide
 

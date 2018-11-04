@@ -2,7 +2,7 @@
 layout: post
 title: TreeSnap release press
 date: 2017-07-20
-excerpt_separator: <!--more-->
+excerpt_separator: 
 tags:
   - treesnap
   - citizen-science
@@ -12,7 +12,7 @@ tags:
 
 Early this year, I joined Meg Staton's group at the University of Tennessee as a mobile and web developer.  My major project since then has been designing, coding, and releasing the mobile citizen science app TreeSnap.  I think it's a fantastic project, and I'd love it if you [visited the app's website](https://treesnap.org) to learn more. 
 
- <!--more-->
+ 
 
 # What is TreeSnap?
 

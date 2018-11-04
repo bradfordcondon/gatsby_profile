@@ -2,7 +2,7 @@
 layout: post
 title: fixing tabs
 date: 2017-04-19
-excerpt_separator: <!--more-->
+excerpt_separator: 
 tags: 
   - jekyll
   - web-dev
@@ -15,7 +15,7 @@ As you can see below, the navigation tabs I'm using at the top of my page didn't
 
 So how do we fix it?
 
-<!--more-->
+
 
 
 The header is defined in the `/_includes` folder in a hero-footer element.

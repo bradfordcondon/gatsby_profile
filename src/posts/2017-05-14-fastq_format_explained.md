@@ -2,7 +2,7 @@
 layout: post
 title: FASTQ format explained
 date: 2017-05-14
-excerpt_separator: <!--more-->
+excerpt_separator: 
 tags:
   - bioinformatics
   - next-generation-sequencing
@@ -28,7 +28,7 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 !''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
 
 ```
-<!--more-->
+
 
 ### Line 1
 

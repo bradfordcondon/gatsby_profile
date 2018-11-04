@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tripal GFF Loader"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2018-03-28
 tags: 
  - tripal
@@ -16,7 +16,7 @@ I was recently tasked with using the Tripal GFF loader to add genomic coordinate
 ![Tripal Logo](/img/TripalLogo_dark.png)
 
 
-<!--more-->
+
 
 # The GFF3 file
 

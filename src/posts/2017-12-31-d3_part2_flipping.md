@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "D3 part two: flipping the plot"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2017-12-31
 custom_js: d3_graph_2.js
 tags: 
@@ -20,7 +20,7 @@ D3 considers the **upper left** corner of the SVG to be 0,0.  This means that th
 
 To correct our inverted plot, let's introduce [D3 scales](https://github.com/d3/d3-3.x-api-reference/blob/master/Quantitative-Scales.md).  As a quick reminder, we're using the D3-3.x package: the latest version has slightly different scale function calls.
 
-<!--more-->
+
 
 
 

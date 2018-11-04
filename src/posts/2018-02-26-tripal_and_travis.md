@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tripal Country: Tripal and Travis"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2018-02-26
 tags: 
  - drupal
@@ -23,7 +23,7 @@ This week I'm excited to announce we've set up Travis Continuous Integration wit
 * Install Tripal 3 on a clean site
 * Run PHPUnit tests
 
-<!--more-->
+
 
 >![tripal passing!](/img/tripal/tripal_passing.png)
 >Is there anything more fulfilling than seeing a *Build:Passing* tag on your repo?

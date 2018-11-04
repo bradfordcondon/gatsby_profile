@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "AJAX and widgets in Tripal 3"
-excerpt_separator: <!--more-->
+excerpt_separator:
 date: 2018-09-24
-tags: 
+tags:
  - drupal
  - tripal
  - documentation
@@ -12,15 +12,11 @@ tags:
 
 # Introduction
 
-Link: [original GitHub issue](https://github.com/tripal/tripal/issues/607
-)
+Link: [original GitHub issue](https://github.com/tripal/tripal/issues/607)
 
 I found myself in a predicament: I wanted to include a dynamic element in my Tripal field's formatter.  
 
 However, I couldnt for the life of me get the AJAX callback to run in the formatter.
-
-<!--more-->
-
 
 ### The problem: renderable arrays
 
@@ -119,5 +115,3 @@ In the field formatter, we simply add this form and put the markup in the elemen
         return $element;
     }
 ```
-
-

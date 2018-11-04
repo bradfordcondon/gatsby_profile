@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Plotting with D3 part 1"
-excerpt_separator: <!--more-->
+excerpt_separator: 
 date: 2017-12-22
 custom_js: d3_graph_1.js
 tags: 
@@ -17,7 +17,7 @@ tags:
 
 [D3js (Data-Driven Documents)](https://d3js.org/) is a Javascript library that manipulates the DOM and is often used to build SVG plots.  I recently created an interactive plot for differential expression data as part of the [Tripal Analysis Expression module](https://github.com/tripal/tripal_analysis_expression/). Because other Tripal modules use D3 v3.x, I was required to do the same (as opposed to v4, the latest version).  While the [API is available](https://github.com/d3/d3-3.x-api-reference/blob/master/API-Reference.md), I'm the sort of person who learns best from tutorials and examples, and I struggled to find enough v3 examples.
 
-<!--more-->
+
 
 
 > ![Tripal Analysis Expression plot](/img/d3/taexp_plot.png)
