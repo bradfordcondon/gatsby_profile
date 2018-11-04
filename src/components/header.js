@@ -16,7 +16,7 @@ import Navcomponent from './Navcomponent'
 
 const Header = () => (
   <div>
-  <Jumbotron>
+  <Jumbotron color = 'red'>
     <div
       style={{
         margin: '0 auto',
@@ -34,7 +34,6 @@ const Header = () => (
           }}
         >
         </Link>
-      <span></span>
     </div>
     <Navcomponent/>
     </Jumbotron>
