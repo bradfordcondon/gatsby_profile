@@ -25,23 +25,21 @@ export default({data}) => {
       {
         data.allMarkdownRemark.edges.map(({node}) => (<div class="card" style={{
             margin: '10px',
-            paddingLeft: '30px',
-            paddingTop: '5px'
-
+            width: '60rem'
           }} key={node.id}>
           <Link to={node.fields.slug} className={css `
                 text-decoration: none;
                 color: inherit;
               `}>
-            <h3 >
+            <div class="card-header">
               {node.frontmatter.title}
-            </h3>
+            </div>
             <span className={css `
                     color: #bbb;
                   `} style={{
-                margin: '1px'
+                marginLeft: '10px'
               }}>
-              <h4>
+              <div>
                 {node.frontmatter.date}
                 {
                   node.frontmatter.tags
@@ -58,9 +56,11 @@ export default({data}) => {
                     })
                     : ''
                 }
-              </h4>
+              </div>
             </span>
+            <div class="card-text" style={{marginLeft: '10px'}}>
             <p>{node.excerpt}</p>
+            </div>
           </Link>
         </div>))
       }
