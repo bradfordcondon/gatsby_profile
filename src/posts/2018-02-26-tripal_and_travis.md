@@ -15,7 +15,7 @@ tags:
 
 Welcome to Tripal Country!
 
-![Tripal Logo](/assets/img/TripalLogo_dark.png)
+![Tripal Logo](/img/TripalLogo_dark.png)
 
 This week I'm excited to announce we've set up Travis Continuous Integration with Tripal!  This means every time code is committed, we test three things:
 
@@ -25,7 +25,7 @@ This week I'm excited to announce we've set up Travis Continuous Integration wit
 
 <!--more-->
 
->![tripal passing!](/assets/img/tripal/tripal_passing.png)
+>![tripal passing!](/img/tripal/tripal_passing.png)
 >Is there anything more fulfilling than seeing a *Build:Passing* tag on your repo?
 
 

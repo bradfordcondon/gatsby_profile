@@ -14,7 +14,7 @@ tags:
 
 Welcome to Tripal Country!
 
-![Tripal Logo](/assets/img/TripalLogo_dark.png)
+![Tripal Logo](/img/TripalLogo_dark.png)
 
 
 Tripal feature annotations might be a little unintuitive, especially for non-biologists.  This guide is to solidify my own knowledge of what goes where and why: hopefully it will be helpful to some developers as well.

@@ -13,7 +13,7 @@ In a [previous blog post](/2017/09/25/Software_Data_Carpentry/), I announced my 
 
 Looking forward to teaching my first workshop in the next few months!
 
-![Data Carpentry](/assets/img/carpentry/d_carp.png) ![Software Carpentry](/assets/img/carpentry/s_carp.png)
+![Data Carpentry](/img/carpentry/d_carp.png) ![Software Carpentry](/img/carpentry/s_carp.png)
 
 
  <!--more-->

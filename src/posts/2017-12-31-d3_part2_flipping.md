@@ -12,7 +12,7 @@ tags:
  - data-science
 ---
 
-![D3 logo](/assets/img/d3/d3_logo.png)
+![D3 logo](/img/d3/d3_logo.png)
 
 In our [previous lesson](/2017/12/22/plotting_with_d3/), we created this rudimentary plot.
 

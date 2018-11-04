@@ -13,7 +13,7 @@ tags:
 
 This week(September 25th & 26th 2017), I will be certified as a Software and Data Carpentry instructor.  As of 2017-06-26, there were 968 instructors.  Am I lucky number 1,000?  Probably not.  Still, exciting.
 
-![Data Carpentry](/assets/img/carpentry/d_carp.png) ![Software Carpentry](/assets/img/carpentry/s_carp.png)
+![Data Carpentry](/img/carpentry/d_carp.png) ![Software Carpentry](/img/carpentry/s_carp.png)
 
 
 

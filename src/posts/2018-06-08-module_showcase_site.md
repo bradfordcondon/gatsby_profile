@@ -12,7 +12,7 @@ tags:
 This week I made a [super simple Jekyll-powered site to show off the modules I've developed for Tripal](https://statonlab.github.io/hardwoods_tripal_showcase/)!
 
 <a href="https://statonlab.github.io/hardwoods_tripal_showcase/">
-![Showcase Image](/assets/img/tripal_showcase.png)
+![Showcase Image](/img/tripal_showcase.png)
 </a>
 
 <!--more-->

@@ -13,7 +13,7 @@ tags:
 I was recently tasked with using the Tripal GFF loader to add genomic coordinates to our mRNA features.  The Tripal.info tutorial [covers using the GFF loader](http://tripal.info/tutorials/v3.x/example-genomic-site/genomic-data) to load in features, but at Hardwoods we don't typically follow this paradigm, and only load in features using the FASTA loader.
 
 
-![Tripal Logo](/assets/img/TripalLogo_dark.png)
+![Tripal Logo](/img/TripalLogo_dark.png)
 
 
 <!--more-->
