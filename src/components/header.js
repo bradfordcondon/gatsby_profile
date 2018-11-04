@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import {
+  Collapse,
   Jumbotron,
   Navbar,
   NavbarToggler,
@@ -11,7 +12,10 @@ import {
   Button
 } from "reactstrap";
 
+import Navcomponent from './Navcomponent'
+
 const Header = () => (
+  <div>
   <Jumbotron>
     <div
       style={{
@@ -32,7 +36,9 @@ const Header = () => (
         </Link>
       <span></span>
     </div>
+    <Navcomponent/>
     </Jumbotron>
+    </div>
 );
 
 export default Header

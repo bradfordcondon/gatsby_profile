@@ -3,6 +3,9 @@ import { css } from "react-emotion"
 import { Link, graphql } from "gatsby"
 //import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
+import {
+  Badge,
+} from "reactstrap";
 
 export default ({ data }) => {
   return (
@@ -41,6 +44,7 @@ export default ({ data }) => {
               </h3>
               <p>{node.excerpt}</p>
             </Link>
+            <Badge color="secondary">New</Badge>
           </div>
         ))}
       </div>
