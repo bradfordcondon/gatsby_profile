@@ -11,7 +11,7 @@ tags:
 As you can see below, the navigation tabs I'm using at the top of my page didn't properly update depending on what page the user is at.  While on the CV page, the CV tab should be selected, not home.
 
 
->![tabs not working!](/img/tabsFix2017/tabIssue.png)
+>![tabs not working!](/gatsby_profile/img/tabsFix2017/tabIssue.png)
 
 So how do we fix it?
 
@@ -55,6 +55,6 @@ We can test if we are on a particular page using this snippet: `{% if page.url =
 
 Reload the site and voila, our header now updates based on our page.
 
->![tabs working!](/img/tabsFix2017/tabsFixed.png)<br>Liquid tags make it easy to conditionally change the class of our header tab element to active or not.
+>![tabs working!](/gatsby_profile/img/tabsFix2017/tabsFixed.png)<br>Liquid tags make it easy to conditionally change the class of our header tab element to active or not.
 
 If you'd like to learn more we have been working with [Liquid](https://shopify.github.io/liquid/) tags.  There are a variety of handy tags to make your static page more dynamic.

@@ -32,7 +32,7 @@ In computing, [a PATH](https://en.wikipedia.org/wiki/Path_(computing)) is the ab
 To begin, you must first access the command line.  On Mac, this is through the Terminal: on Windows, you need to use a program like [PuTTY](http://kb.site5.com/shell-access-ssh/putty/putty-how-to-start-a-ssh-session-from-the-command-line/).  
 
 Open up your Terminal (press CMD-SPACE top open spotlight and type terminal) and you should be greeted by a command prompt like this:
-![Welcome to the command line](assets/img/PATH/path2.png)
+![Welcome to the command line](assets/gatsby_profile/img/PATH/path2.png)
 
 Where are we?  What files and folders are located where we are?  The word immediately preceeding the $ symbol is the name of my current working directory.  The next section will explain some simple commands to look around your file structure.
 

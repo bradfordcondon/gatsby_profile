@@ -52,7 +52,7 @@ gv assembly.final.ps
 
 The resulting visualization will show each edge with its edgeID color coded by length.
 
-> ![Edge illustration](/img/discovar/discovar_graph.png)
+> ![Edge illustration](/gatsby_profile/img/discovar/discovar_graph.png)
 > 
 > Example visualization of a DISCOVAR edge, [from the DISCOVAR manual](https://docs.google.com/document/d/1U_o-Z0dJ0QKiJn86AV2o_YHiFzUtW9c57eh3tYjkINc/edit).
 

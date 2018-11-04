@@ -14,7 +14,7 @@ tags:
 
 Welcome to Tripal Country!
 
-![Tripal Logo](/img/TripalLogo_dark.png)
+![Tripal Logo](/gatsby_profile/img/TripalLogo_dark.png)
 
 This is a short guide to demonstrate how to create new bundle types with Chado storage in Tripal 3. It was originally written as instructions for my [Tripal Alchemist module](https://github.com/statonlab/tripal_alchemist/).  There is a similar guide [on tripal.info](http://tripal.info/tutorials/v3.x/content-types) which you can also review.
 
@@ -44,7 +44,7 @@ I recommend using the [EBI Ontology Lookup Service](https://www.ebi.ac.uk/ols/in
 
 Next, make sure the term is in your database.  If you've already loaded the entire CV or ontology you found your term in, you can skip this step.  Otherwise, go to /admin/tripal/loaders/chado_vocabs/chado_cvterms in the admin menu and select **+ Add Term.**  Be sure to fill out the CV, DB, accession, and Term Name fields correctly: for a detailed guide on this topic, please see [the guide available in the Tripal Fields Generator Tool](https://github.com/statonlab/fields_generator/blob/master/CV_guide.md).
 
->![admin location of adding a content type](/img/tripal/bundle_creation/create_bundle_2_cvterm.png)
+>![admin location of adding a content type](/gatsby_profile/img/tripal/bundle_creation/create_bundle_2_cvterm.png)
 > After finding an appropriate CVterm, use the chado cvterm loader to insert it if not already present in your database.
 
 A note: if you are stumped, or can't seem to find a good CVterm, you can use the local CV, but this is discouraged.   
@@ -53,11 +53,11 @@ A note: if you are stumped, or can't seem to find a good CVterm, you can use the
 
 Now that we have a CVTerm for our bundle, let's add it to Tripal.  You can add a new Tripal Content Type (Bundle) by navigating to Structure -> Tripal Content Types -> Add Tripal Content Type in the admin menu.  To fill out this form, we need to know our CVterm, what Chado base table our bundle uses, and how the content type is differentiated if the table is shared.  In the case of our demo Protein Expression Profiling bundle, we know that it is one of several content types using the *Analysis* Chado base table. 
 
->![admin location of adding a content type](/img/tripal/bundle_creation/create_bundle_1.png)
+>![admin location of adding a content type](/gatsby_profile/img/tripal/bundle_creation/create_bundle_1.png)
 >
 > You can create new Tripal Content Types (bundles) via the admin panel by navigating to Structure -> Tripal Content Types. 
 
-> ![Look up the bundle term](/img/tripal/bundle_creation/create_bundle_lookup_bundle_term.png)
+> ![Look up the bundle term](/gatsby_profile/img/tripal/bundle_creation/create_bundle_lookup_bundle_term.png)
 > First, assign your term to your bundle.  You should have a term in the *Matching Terms* box after pressing Lookup Term.
 
 There are three possible storage configurations for your bundle.
@@ -69,7 +69,7 @@ There are three possible storage configurations for your bundle.
 Tripal will **automatically make suggestions**for where to store the type based on your Chado schema.
  
 
-> ![Set the property type values](/img/tripal/bundle_creation/create_bundle_set_storage_properties.png)
+> ![Set the property type values](/gatsby_profile/img/tripal/bundle_creation/create_bundle_set_storage_properties.png)
 > In this example, we specify our bundle type in the analysisprop table.  There is a property associated with our analysis via this table where the type_id matches the cvterm we specify (Analysis Type), and the corresponding value should be tripal_protein_expression.
 
 For our Protein Expression Profiling bundle, we want to use the `analysisprop` table.  Tripal (and Tripal Alchemist!) will look for entries in the analysis table that have a property in the analysisprop table where type_id = the cvterm for the type (Analysis Type in this case).  Tripal will know that the analysis is a Protein Expression Profiling if the `value` column of that property is equal to the text we specified: `tripal_protein_expression`.  For analyses created by modules, this is the convention: set the Analysis Type cvterm equal to the *module name*.

@@ -8,7 +8,7 @@ tags:
   - citizen-science
 ---
 
-![TreeSnap](/img/TreeSnap/TreesnapFullLogo_x3.png)
+![TreeSnap](/gatsby_profile/img/TreeSnap/TreesnapFullLogo_x3.png)
 
 Early this year, I joined Meg Staton's group at the University of Tennessee as a mobile and web developer.  My major project since then has been designing, coding, and releasing the mobile citizen science app TreeSnap.  I think it's a fantastic project, and I'd love it if you [visited the app's website](https://treesnap.org) to learn more. 
 

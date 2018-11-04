@@ -39,7 +39,7 @@ Note: for an extremely in depth summary of how BLAST works, see [the NCBI course
 
 Accessing data: let's go to GenBank and access some protein sequences by pointing a browser to http://www.ncbi.nlm.nih.gov/genbank/  
 
-![Blast remote](/img/BLASTremote/rblast1.png)
+![Blast remote](/gatsby_profile/img/BLASTremote/rblast1.png)
 
 
 > *	Search for a protein you are interested in. For starters, let's look for ABC transporters in *Magnaporthe oryzae*, the fungus which causes a variety of blast diseases on different “grass” plants (including wheat and rice).
@@ -47,11 +47,11 @@ Accessing data: let's go to GenBank and access some protein sequences by pointin
 
 Here is a top hit.  Note that the Accession number, ELQ65981.1 as well as the gene ID 440486081 both serve to uniquely identify this protein.
 
-![Your first BLAST hit](/img/BLASTremote/rblast2.png)
+![Your first BLAST hit](/gatsby_profile/img/BLASTremote/rblast2.png)
  
 Clicking on the FASTA link for this sequence will display the protein's sequence in FASTA format.
 
-![Your first BLAST hit, in FASTA format](/img/BLASTremote/rblast3.png)
+![Your first BLAST hit, in FASTA format](/gatsby_profile/img/BLASTremote/rblast3.png)
  
 >Download a protein sequence and save it to its own FASTA file.  
 
@@ -67,7 +67,7 @@ The National Institute of Health hosts a fantastic BLAST database at their websi
 
  A view of the BLAST results is provided below.
  
-![BLAST query interface](/img/BLASTremote/rblast4.png)
+![BLAST query interface](/gatsby_profile/img/BLASTremote/rblast4.png)
 
 
 The *conserved domains* section gives us an overview of the protein.  You can click on individual regions of the protein to learn more about each domain.  Because we searched with an ABC protein, we see an ATP-binding cassette (ABC) domain, a ABC_membrane domain, and a second ABC domain.
@@ -77,7 +77,7 @@ The *conserved domains* section gives us an overview of the protein.  You can cl
 We will learn more about predicting protein domains, and understanding conserved domains, in a later lesson.
 Navigate back to the blast results page (back on your browser), and scroll down to the colored alignments section.
    
-![BLAST query interface close up](/img/BLASTremote/rblast5.png)
+![BLAST query interface close up](/gatsby_profile/img/BLASTremote/rblast5.png)
 
 
 BLAST will list results in descending order.  In the example of the first six results above, our query protein is given at the top, and each result is drawn as a series of colored boxes.  The higher the alignment score for a region, the more similar that protein is. 
@@ -99,7 +99,7 @@ BLAST will list results in descending order.  In the example of the first six re
 #### Storing BLAST results
 Let's say we wanted to store the sequences of proteins retrieved in our BLAST.  To do this, scroll down to the list of hits, click "select all", then Download, and hit "continue" with the FASTA (complete sequence) option checked.  This will download all of our hit sequences to a single FASTA file.  By selecting Text, on the other hand, we can download the BLAST output itself (the alignments, e values, etc).
  
-![batch download BLAST results](/img/BLASTremote/rblast6.png)
+![batch download BLAST results](/gatsby_profile/img/BLASTremote/rblast6.png)
 
 
 > *	Download all sequences matched by BLAST to a single FASTA file.

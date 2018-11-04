@@ -22,7 +22,7 @@ I&#8217;m excited to announce that my wife [Dr. Ellen Crocker](https://evcrocker
 
 No promises, but our last foray into the Daniel Boone National Forest was beautiful, and yielded a pound or two of some nice chanterelles.
 
-![Chanterelles](/wp-content/uploads/2016/08/IMG_2027.jpg)
+![Chanterelles](/wp-content/uploads/2016/08/gatsby_profile/img_2027.jpg)
 >Wild chanterelles harvested this summer in Kentucky.  Chanterelles are an example of an easy to identify edible wild mushroom.  The only poisonous look-a-like to the chanterelle is the Jack O'Lantern mushroom.  Beginning mushroom hunters will learn that chanterelles have false gills, unlike the Jack O&#8217;Lantern.  Additionaly, Jack O&#8217;Lanterns tend to grow in dense clusters, whereas chanterelles emerge distinctly. 
 
 While the workshop is full, please think about signing up for the waitlist or contacting me to hear more about future mushroom forays.

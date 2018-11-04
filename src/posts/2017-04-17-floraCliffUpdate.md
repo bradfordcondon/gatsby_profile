@@ -23,13 +23,13 @@ Hope to see you all again soon!
 ## Workshop photos
 Photos were taken by Kevin Lutes and used with permission.  Check out the [facebook album of Keivn's photos](https://www.facebook.com/pg/KevinLutesPhotography/photos/?tab=album&album_id=1236718489722797) and also find [Kevin on instagram](https://www.instagram.com/klutesphoto/).
 
-![Group photo](/img/floracliff2016/groupPhoto.png)
+![Group photo](/gatsby_profile/img/floracliff2016/groupPhoto.png)
 >Group photo of those who were able to attend the day 2 hike.  We could not have asked for better students.
 
-![Bradford Condon teaching](/img/floracliff2016/CondonTeaching.png)
+![Bradford Condon teaching](/gatsby_profile/img/floracliff2016/CondonTeaching.png)
 >Dr. Bradford Condon doing his best to make sense of a field guide.
 
-![Bradford Condon teaching](/img/floracliff2016/groupWork.png)
+![Bradford Condon teaching](/gatsby_profile/img/floracliff2016/groupWork.png)
 >Identifying our haul.
 
 
