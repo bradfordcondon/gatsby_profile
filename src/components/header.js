@@ -16,25 +16,16 @@ import Navcomponent from './Navcomponent'
 
 const Header = () => (
   <div>
-  <Jumbotron color = 'red'>
-    <div
+  <Jumbotron color = 'red' style={{paddingBottom: '0px'}}>
+    <Link to="/"
       style={{
-        margin: '0 auto',
-        maxWidth: 980,
-        padding: '1.45rem 1.0875rem',
+        color: 'black',
+        textDecoration: 'none',
       }}
-   >
+    >
        <h1 className="display-3"> Bradford Condon, PhD</h1>
        <p className="lead">Bionformatics, Data Science, Web & Mobile Development</p>
-
-        <Link to="/"
-          style={{
-            color: 'black',
-            textDecoration: 'none',
-          }}
-        >
         </Link>
-    </div>
     <Navcomponent/>
     </Jumbotron>
     </div>

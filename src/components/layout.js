@@ -35,7 +35,7 @@ const Layout = ({children}) => (<StaticQuery query={graphql `
   } > <html lang="en"/>
 </Helmet>
 <Header siteTitle={data.site.siteMetadata.title}/>
-<div class="container">
+<div class="container" style={{display: 'flex', justifyContent: 'center'}}>
     {children} </div>
         <MyFooter/> </>)}
           />)
