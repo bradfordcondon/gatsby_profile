@@ -1,20 +1,14 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import {
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import {Link} from 'gatsby'
+import {Navbar, NavbarBrand, Nav, NavItem, NavLink} from "reactstrap";
 
-const Navcomponent = () => (
-  <div>
-  <Navbar light expand="md" display="flex">
-           <NavbarBrand href="/">Home</NavbarBrand>
-           <NavbarBrand href="/cv">CV</NavbarBrand>
-         </Navbar>
-  </div>
-);
+const Navcomponent = () => (<div>
+  <Navbar light="light" expand="md">
+    <NavbarBrand href="/">Home</NavbarBrand>
+    <NavbarBrand href="/tags">All Post Tags</NavbarBrand>
+    <NavbarBrand href="/tags/tripal/">Tripal Posts</NavbarBrand>
+    <NavbarBrand href="/cv">CV</NavbarBrand>
+  </Navbar>
+</div>);
 
 export default Navcomponent
