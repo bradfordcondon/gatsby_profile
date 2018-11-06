@@ -3,7 +3,7 @@ import {css} from "react-emotion"
 import {Link, graphql} from "gatsby"
 //import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
-import {Badge} from "reactstrap";
+import {Badge, Col, Row, Card, CardImg, CardTitle, CardBody, CardSubtitle, CardText} from "reactstrap";
 
 export default({data}) => {
 
@@ -22,8 +22,20 @@ export default({data}) => {
 
   return (<Layout>
     <div>
+<Row>
+      <Col>
+        <Card style={{maxWidth: 250}}>
+          <CardImg  src="/img/condon_face.jpg" alt="Bradford Condon PhD" />
+            <CardBody>
+                     <CardText>Hello!  I am a full stack web/mobile developer, data scientist, and bionformatician.</CardText>
+<CardText>If you're looking for <b>Tripal</b> help, you're in the right place.</CardText>
+                 </CardBody>
+          </Card>
+      </Col>
+
+    <Col>
       {
-        data.allMarkdownRemark.edges.map(({node}) => (<div class="card" style={{
+        data.allMarkdownRemark.edges.map(({node}) => (<Card style={{
             margin: '10px',
             width: '60rem'
           }} key={node.id}>
@@ -62,8 +74,10 @@ export default({data}) => {
             <p>{node.excerpt}</p>
             </div>
           </Link>
-        </div>))
+        </Card>))
       }
+    </Col>
+    </Row>
     </div>
   </Layout>)
 }
