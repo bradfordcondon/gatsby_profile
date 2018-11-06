@@ -11,7 +11,7 @@ tags:
 ---
 
 
- ![Software Carpentry](/gatsby_profile/img/carpentry/s_carp.png)
+ ![Software Carpentry](/img/carpentry/s_carp.png)
 
 
 I am happy to announce I will be instructing a Software Carpentry Workshop at the University of Tennessee Knoxville.  The workshop will be taught by myself, Meg Staton, and Drew Steen on December 18th and 19th, 2017 in 702 Strong Hall.

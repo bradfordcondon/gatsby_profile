@@ -12,7 +12,7 @@ tags:
  - data-science
 ---
 
-![D3 logo](/gatsby_profile/img/d3/d3_logo.png)
+![D3 logo](/img/d3/d3_logo.png)
 
 In the [previous post](/2017/12/31/d3_part2_flipping/), we learned about using scales to format our x and y axes, s well as our bar coloring.
 

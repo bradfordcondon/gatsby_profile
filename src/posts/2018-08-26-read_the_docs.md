@@ -10,7 +10,7 @@ tags:
 ---
 This week, we'll be moving the Tripal documentation over to ReadTheDocs.  I've already put the Tripal DevSeed documentation online.
 
-![Tripal Logo](/gatsby_profile/img/TripalLogo_dark.png)  
+![Tripal Logo](/img/TripalLogo_dark.png)  
 
 This post will talk about the reasons for this decision, and a quick "how to" guide.
 
@@ -22,7 +22,7 @@ This post will talk about the reasons for this decision, and a quick "how to" gu
 
 Documentation is important.  It tells users how to use our product, and developers how to read our code.  In the past, I've written my documentation out in markdown and included it alongside the code.  This approach still makes sense for small projects, and it gets built nicely by GitHub on the repository.
 
-![tripal readme](/gatsby_profile/img/tripal_github_doc.png)
+![tripal readme](/img/tripal_github_doc.png)
 
 For larger projects, such as Tripal, the real documentation is hosted on a drupal site at tripal.info.  There is a full content management system for creating new posts, managing privileges, uploading images, linking documents, etc.
 
@@ -54,7 +54,7 @@ We use `RST` format.  It might seem a little more complicated than markdown (and
 
 Link documents to your `index.rst` and Sphinx will build you a searchable site with nicely formatted navigation.
 
-![devseed read the docs site](/gatsby_profile/img/devseed_rtd.png)
+![devseed read the docs site](/img/devseed_rtd.png)
 
 ReadTheDocs also provides some really awesome **versioning** tools, allowing you to post releases of the documentation so users can go back and find older documentation with almost no effort on your part.
 

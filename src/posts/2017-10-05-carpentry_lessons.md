@@ -13,7 +13,7 @@ In a [previous blog post](/2017/09/25/Software_Data_Carpentry/), I announced my 
 
 Looking forward to teaching my first workshop in the next few months!
 
-![Data Carpentry](/gatsby_profile/img/carpentry/d_carp.png) ![Software Carpentry](/gatsby_profile/img/carpentry/s_carp.png)
+![Data Carpentry](/img/carpentry/d_carp.png) ![Software Carpentry](/img/carpentry/s_carp.png)
 
 
  
@@ -57,7 +57,7 @@ In-class activities include all of the following examples:
  
 # Technology
 
-![etherpad](http://etherpad.org/gatsby_profile/img/screenshot.png)
+![etherpad](http://etherpad.org/img/screenshot.png)
 >etherpad is an excellent group notepad.
 
 The most interesting portion of this training for me was the use of technology.  Active learning is so difficult in an on-line session: how do you stop for evaluations or encourage students to interact?

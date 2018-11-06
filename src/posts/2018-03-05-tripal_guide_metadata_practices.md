@@ -11,7 +11,7 @@ tags:
 
 Welcome to Tripal Country!
 
-![Tripal Logo](/gatsby_profile/img/TripalLogo_dark.png)
+![Tripal Logo](/img/TripalLogo_dark.png)
 
 Today I'm sharing my suggestions on how to set up your module.
 
