@@ -21,7 +21,6 @@ export default({data}) => {
   }
 
   return (<Layout>
-    <div>
 <Row>
       <Col>
         <Card style={{maxWidth: 250}}>
@@ -78,7 +77,6 @@ export default({data}) => {
       }
     </Col>
     </Row>
-    </div>
   </Layout>)
 }
 
