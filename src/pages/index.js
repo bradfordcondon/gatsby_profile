@@ -22,9 +22,9 @@ export default({data}) => {
 
   return (<Layout>
 <Row>
-      <Col>
-        <Card style={{maxWidth: 250}}>
-          <CardImg  src="/img/condon_face.jpg" alt="Bradford Condon PhD" />
+      <Col xs="3">
+        <Card >
+          <CardImg style={{maxWidth: 250}} src="/img/condon_face.jpg" alt="Bradford Condon PhD" />
             <CardBody>
                      <CardText>Hello!  I am a full stack web/mobile developer, data scientist, and bionformatician.</CardText>
 <CardText>If you're looking for <b>Tripal</b> help, you're in the right place.</CardText>
@@ -32,12 +32,9 @@ export default({data}) => {
           </Card>
       </Col>
 
-    <Col>
+    <Col xs="9">
       {
-        data.allMarkdownRemark.edges.map(({node}) => (<Card style={{
-            margin: '10px',
-            width: '60rem'
-          }} key={node.id}>
+        data.allMarkdownRemark.edges.map(({node}) => (<Card className={"mb-4"} key={node.id}>
           <Link to={node.fields.slug} className={css `
                 text-decoration: none;
                 color: inherit;
