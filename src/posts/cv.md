@@ -20,24 +20,23 @@ May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
 
 ## Employment
 
+* September 2018 to present: IT Specialist III, University of Tennessee
 
-September 2018 to present: IT Specialist III, University of Tennessee
+> Tripal core developer.  Collaborative Tripal developer for the Hardwood Genomics Web and the USDA-NAL I5K project.
 
-
-
-February 2017 to September 2018: Postdoctoral associate, Department of Entomology and Plant Pathology, University of Tennessee, Knoxville.
+* February 2017 to September 2018: Postdoctoral associate, Department of Entomology and Plant Pathology, University of Tennessee, Knoxville.
 
 >I develop the Hardwood Genomics Web (HWG), a web site that houses genetic and genomic data from a variety of hardwood tree species.  I contribute to Tripal, an open source genomic database and website framework. I also authored the mobile app TreeSnap, which allows citizens to partner with scientists to track and study trees.  I serve as the biological point person for undergraduate and graduate lab programmers to help them understand the underlying database model.
 
 
-January 2016 to January 2017: Postdoctoral associate, Department of Plant Pathology, University of Kentucky.
+* January 2016 to January 2017: Postdoctoral associate, Department of Plant Pathology, University of Kentucky.
 
 >Performed bioinformatic analyses for whole-genome alignment and phylogenetics of the rice blast pathogen _magnaporthe oryzae_.  Developed and implemented a mentoring program in bioinformatics for undergraduate biologists, UK-BLAST.
 
-June 2014 to December 2015: Postdoctoral associate, Department of Ecology, Evolution, and Behavior, University of Minnesota.
+* June 2014 to December 2015: Postdoctoral associate, Department of Ecology, Evolution, and Behavior, University of Minnesota.
 >Planned and implemented a large-scale metagenomic study of bacterial and fungal endophytes for over 1,000 native prairie grass leaves.  Designed a metagenomic sequencing and analysis pipeline.
 
-August 2007 to June 2014: Graduate Student and Post-Doctoral fellow, Department of Plant Pathology & Plant-Microbe Interactions, Cornell University, advised by Dr. [B Gillian Turgeon](http://www.plantpath.cornell.edu/labs/turgeon/index.html)
+* August 2007 to June 2014: Graduate Student and Post-Doctoral fellow, Department of Plant Pathology & Plant-Microbe Interactions, Cornell University, advised by Dr. [B Gillian Turgeon](http://www.plantpath.cornell.edu/labs/turgeon/index.html)
 
 
 >Performed genetic and genomic studies using the model fungal phytopathogen Cochliobolus heterostrophus.  Acted as lab co-manager in charge of ordering and hiring/training/managing undergraduate students.
@@ -51,18 +50,21 @@ August 2007 to June 2014: Graduate Student and Post-Doctoral fellow, Department
 * Co-developer of [TreeSnap](https://treesnap.org/), mobile citizen science app.
 
 
-## Software
+## Selected Software
 
-#### Tripal 
+#### Tripal
 
-* [Tripal Analysis Expression Module](https://github.com/tripal/tripal_analysis_expression) 
+* [Tripal Headquarters](https://github.com/statonlab/tripal_hq) [![DOI](https://zenodo.org/badge/152087832.svg)](https://zenodo.org/badge/latestdoi/152087832)
+  - Provide an admin layer between Chado and Tripal
+  - Chado-specific permissions, allowing administrators to create community-specific roles within the site
+* [Tripal Analysis Expression Module](https://github.com/tripal/tripal_analysis_expression)
   - For loading and display of RNASeq data, from biological source material to gene expression data  
   - DOI: 10.5281/zenodo.1115662
 * [Tripal ElasticSearch Module](https://github.com/tripal/tripal_elasticsearch)
   - For installing and managing sitewide search, customized search forms, and cross-Tripal-site queries via ElasticSearch
   - DOI: 10.5281/zenodo.1193925
 * [Tripal Fields Generator](https://github.com/statonlab/fields_generator)
-  - Developer CLI tool to automate Tripal field creation for Tripal v3 development 
+  - Developer CLI tool to automate Tripal field creation for Tripal v3 development
   - DOI: 10.5281/zenodo.1200662
 * [Tripal TestSuite](https://github.com/statonlab/TripalTestSuite)
   - A composer package that handles common test practices such as bootstrapping Drupal before running the tests, creating test file, and creating and managing database seeders.
@@ -71,7 +73,12 @@ August 2007 to June 2014: Graduate Student and Post-Doctoral fellow, Department
   - Enables bulk transformation of Tripal entities from one type to another
   - DOI: 10.5281/zenodo.1187120
 
+
 #### TreeSnap
+
+Lead developer for TreeSnap, a citizen science mobile app.  Find out more: https://treesnap.org/
+
+Code:
 
 * [Mobile](https://github.com/statonlab/Treesnap-mobile)
 * [Web](https://github.com/statonlab/Treesnap-website)
@@ -83,7 +90,7 @@ August 2007 to June 2014: Graduate Student and Post-Doctoral fellow, Department
 
   * Proficient with UNIX/LINUX systems, command-line programming, querying and managing big data/databases
   * Developer for cross-platform (iOS and Android) apps in React-Native, and genomics websites using Tripal and Drupal.
-  * Experience designing experiments and analyzing data for a wide variety of bioinformatic projects, including 
+  * Experience designing experiments and analyzing data for a wide variety of bioinformatic projects, including
       * Metagenomics
       * RNA-seq and transcriptomics
       * Genome assembly and annotation
@@ -101,7 +108,7 @@ August 2007 to June 2014: Graduate Student and Post-Doctoral fellow, Department
 
 #### Communication and mentorship
 
-  * Formed UK-BLAST, the undergraduate bioinformatics mentorship group at the University of Kentucky 
+  * Formed UK-BLAST, the undergraduate bioinformatics mentorship group at the University of Kentucky
       * Leading and designing workshops in bioinformatics
       * Co-mentoring and advising students on their bioinformatics projects
   * Strong track record of supervising undergraduates in the laboratory and integrating their work into complex workflows
@@ -124,17 +131,17 @@ August 2007 to June 2014: Graduate Student and Post-Doctoral fellow, Department
 #### Teaching and leadership
 
 ##### Data and Software Carpentry Certified Instructor 2017
-Trained and certified as a [Data Carpentry](http://www.datacarpentry.org/) and [Software Carpentry](https://software-carpentry.org/) Instructor. 
+Trained and certified as a [Data Carpentry](http://www.datacarpentry.org/) and [Software Carpentry](https://software-carpentry.org/) Instructor.
 
 [Blog posts regarding SWC/DC](/tag/software-carpentry/).
 
 **Hosted Workshops**
 
 * [December 18th-19th 2017, Knoxville, TN](https://statonlab.github.io/2017-12-18-carpentry-workshop/)
-  - Topics covered: Unix, Git, and R 
+  - Topics covered: Unix, Git, and R
 
 ##### KBRIN Next Generation Sequencing and Data Analysis Workshop, *University of Kentucky* 2017
- 
+
 Instructor and web developer.  Implemented and maintained the (Drupal-based workshop website)[https://ngs.csr.uky.edu/] and REDCap registration/survey system.  [Poster publication link](https://link.springer.com/article/10.1186/s12859-017-1781-y).
 
 ##### UK-BLAST: *University of Kentucky* 2016
@@ -162,24 +169,31 @@ _workshops (1 hour) developed & implemented:_
 * Creating effective questions for iClickers and online quizzes
 * Establishing a professional electronic online identity
 
-_Full day workshops developed & implemented:_ 
+_Full day workshops developed & implemented:_
 
 >* 2012 Chemistry TA training instructor
 * 2012 Teaching Excellence Practicum Instructor, CTE summer Institute
 
 #### Presentations
 
+##### Organizer
+
+* [Plant and Animal Genomes Conference](http://www.intlpag.org/) Tripal Session Organizer.  San Diego CA (2019)
+
 ##### Workshops
 * [Floracliff mushroom identification workshop](http://www.bradfordcondon.com/2017/04/17/floraCliffUpdate/). Lexington, KY (2016)
 * [AgBioData metadata committee](https://www.agbiodata.org/working_groups/metadata_persistence_wg). Salt Lake City, UT (2017)
-* [GMOD Hackathon](http://www.bradfordcondon.com/2018/01/12/gmod_day_1_2018/), [Plant and Animal Genomes Conference](http://www.intlpag.org/). San Diego CA (2017)
-* [Tripal 2017 Hackathon](http://www.bradfordcondon.com/2018/01/17/tripal_at_pag_2018/) Instructor, [Plant and Animal Genomes Conference](http://www.intlpag.org/). San Diego CA (2017)
+* [GMOD Hackathon](http://www.bradfordcondon.com/2018/01/12/gmod_day_1_2018/), [Plant and Animal Genomes Conference](http://www.intlpag.org/). San Diego CA (2018)
+* [Tripal 2018 Hackathon](http://www.bradfordcondon.com/2018/01/17/tripal_at_pag_2018/) Instructor, [Plant and Animal Genomes Conference](http://www.intlpag.org/). San Diego CA (2018)
+* Tripal 2019 Hackathon group leader, [Plant and Animal Genomes Conference](http://www.intlpag.org/). San Diego CA (2018)
 
 ##### Talks
 * Joint Genome Institute Dothideomycete jamboree. Walnut Creek, CA (2008)
 * Fungal Genetics Conference, secondary metabolism session. Asilomar, CA (2013)
 * Kentucky Food Retail Safety Conference, invited speaker on wild mushroom safety. Frankfort, KY (2016)
   - [Slides](https://www.slideshare.net/BradfordCondon1/ky-retail-foodseminar)
+* TreeSnap: A citizen Science Project and Mobile App to Tag Trees for Resistance.  Tree Resistance Conference, OH (2018)
+  - [Slides](https://www.slideshare.net/BradfordCondon1/treesnap-tree-resistance-conference-2018)
 
 ##### Posters
 
@@ -187,22 +201,12 @@ _Full day workshops developed & implemented:_
 * Fungal Genetics Conference, Asilomar, CA (2009)
 * Molecular Plant Microbe Biology, Quebec City, QC (2009)
 * Fungal Genetics Conference, Asilomar, CA (2011)
-* [University of Kentucky Society of Postdoctoral Scholars Research Symposium](http://sops.as.uky.edu/), Lexington, KY (2017) 
+* [University of Kentucky Society of Postdoctoral Scholars Research Symposium](http://sops.as.uky.edu/), Lexington, KY (2017)
 * [Oak Symposium](http://www.outreach.utk.edu/Conferences/Sustaining%20Oak%20Forests/announcement.html), Knoxville TN (2017)
-
-
+* Tree Resistance Conference, OH (2018)
 
 
 ## Publications
-
-### Accepted, In Review
-
-
-
-**Condon, B.**, Elliott, C, Gonzalez, J, Yun, S, Akagi, Y, Wiesner-Hanks, T, Kodama, M, Turgeon, G 2018.  Clues to an evolutionary mystery: the genes for T-toxin, enabler of the devastating 1970 Southern Corn Leaf Blight epidemic, are present in ancestral species, suggesting an ancient origin.  MPMI.
-
-
-**Condon**, B, Almsaeed, A, West, J, Chen, M, Staton, M 2018.  [Tripal Developer Toolkit](https://doi.org/10.1101/328641).  Database, In Review. doi: https://doi.org/10.1101/328641
 
 
 ### In Review
@@ -212,13 +216,17 @@ Lumibao, C, **Condon, B**, Kinkel , L, May, G, Seabloom, E, Borer, E 2018.  Wher
 
 ### Peer-reviewed
 
-Lisa Harper, Jacqueline Campbell, Ethalinda K S Cannon, Sook Jung, Monica Poelchau, Ramona Walls, Carson Andorf, Elizabeth Arnaud, Tanya Z Berardini, Clayton Birkett, Steve Cannon, James Carson, **Bradford Condon**, Laurel Cooper, Nathan Dunn, Christine G Elsik, Andrew Farmer, Stephen P Ficklin, David Grant, Emily Grau, Nic Herndon, Zhi-Liang Hu, Jodi Humann, Pankaj Jaiswal, Clement Jonquet, Marie-Angélique Laporte, Pierre Larmande, Gerard Lazo, Fiona McCarthy, Naama Menda, Christopher J Mungall, Monica C Munoz-Torres, Sushma Naithani, Rex Nelson, Daureen Nesdill, Carissa Park, James Reecy, Leonore Reiser, Lacey-Anne Sanderson, Taner Z Sen, Margaret Staton, Sabarinath Subramaniam, Marcela Karey Tello-Ruiz, Victor Unda, Deepak Unni, Liya Wang, Doreen Ware, Jill Wegrzyn, Jason Williams, Margaret Woodhouse, Jing Yu, Doreen Main; AgBioData consortium recommendations for sustainable genomics and genetics databases for agriculture, _Database_, Volume 2018, 1 January 2018, bay088, https://doi.org/10.1093/database/bay088
+**Condon, B**, Almsaeed, A, West, J, Chen, M, Staton, M (2018).  Tripal Developer Toolkit.  Database, bay099 DOI: https://doi.org/10.1093/database/bay099
+
+**Condon, B.**, Elliott, C, Gonzalez, J, Yun, S, Akagi, Y, Wiesner-Hanks, T, Kodama, M, Turgeon, G (2018).  Clues to an evolutionary mystery: the genes for T-toxin, enabler of the devastating 1970 Southern Corn Leaf Blight epidemic, are present in ancestral species, suggesting an ancient origin.  _MPMI_ Molecular Plant-Microbe Interactions 2018 31:11, 1154-1165.  DOI: https://doi.org/10.1094/MPMI-03-18-0070-R
+
+Lisa Harper, Jacqueline Campbell, Ethalinda K S Cannon, Sook Jung, Monica Poelchau, Ramona Walls, Carson Andorf, Elizabeth Arnaud, Tanya Z Berardini, Clayton Birkett, Steve Cannon, James Carson, **Bradford Condon**, Laurel Cooper, Nathan Dunn, Christine G Elsik, Andrew Farmer, Stephen P Ficklin, David Grant, Emily Grau, Nic Herndon, Zhi-Liang Hu, Jodi Humann, Pankaj Jaiswal, Clement Jonquet, Marie-Angélique Laporte, Pierre Larmande, Gerard Lazo, Fiona McCarthy, Naama Menda, Christopher J Mungall, Monica C Munoz-Torres, Sushma Naithani, Rex Nelson, Daureen Nesdill, Carissa Park, James Reecy, Leonore Reiser, Lacey-Anne Sanderson, Taner Z Sen, Margaret Staton, Sabarinath Subramaniam, Marcela Karey Tello-Ruiz, Victor Unda, Deepak Unni, Liya Wang, Doreen Ware, Jill Wegrzyn, Jason Williams, Margaret Woodhouse, Jing Yu, Doreen Main (2018) AgBioData consortium recommendations for sustainable genomics and genetics databases for agriculture, _Database_, Volume 2018, bay088, DOI: https://doi.org/10.1093/database/bay088
 
 
-Gladieux, P., **Condon, B. J.** (co-first author), Ravel, S., Soanes, D., Maciel, J. L. N., Nhani, A., Chen, L., Terauchi, R., Lebrun, M.-H., Tharreau, D., Mitchell, T., Pedley, K. F., Valent, B., Talbot, N. J., Farman, M., and Fournier, E. 2018. Gene Flow between Divergent Cereal- and Grass-Specific Lineages of the Rice Blast Fungus _Magnaporthe oryzae_. J.W. Taylor, ed. MBio. 9:e01219–17
+Gladieux, P., **Condon, B. J.** (co-first author), Ravel, S., Soanes, D., Maciel, J. L. N., Nhani, A., Chen, L., Terauchi, R., Lebrun, M.-H., Tharreau, D., Mitchell, T., Pedley, K. F., Valent, B., Talbot, N. J., Farman, M., and Fournier, E. (2018). Gene Flow between Divergent Cereal- and Grass-Specific Lineages of the Rice Blast Fungus _Magnaporthe oryzae_. J.W. Taylor, ed. _MBio_. 9:e01219–17.  DOI: 10.1128/mBio.01219-17
 
 
-Mohd Zainudin, N. A. I., **Condon, B. J.,** De Bruyne, L., Poucke, C. V., Bi, Q., Li, W., et al. (2015). Virulence, host selective toxin production, and development of three Cochliobolus phytopathogens lacking the Sfp-type 4&#8242;-phosphopantetheinyl transferase Ppt1. _MPMI_ (digital preprint). doi:10.1094/MPMI-03-15-0068-R
+Mohd Zainudin, N. A. I., **Condon, B. J.,** De Bruyne, L., Poucke, C. V., Bi, Q., Li, W., et al. (2015). Virulence, host selective toxin production, and development of three Cochliobolus phytopathogens lacking the Sfp-type 4&#8242;-phosphopantetheinyl transferase Ppt1. _MPMI_, 28:10, 1130-1141. DOI: 10.1094/MPMI-03-15-0068-R
 
 Santana, M. F., Silva, J. C. F., Mizubuti, E. S. G., Araújo, E. F., **Condon, B. J.,** Turgeon, B. G., & Queiroz, M. V. (2014). Characterization and potential evolutionary impact of transposable elements in the genome of _Cochliobolus_ _heterostrophus_. _BMC Genomics_, _15_(1), 536. doi:10.1186/1471-2164-15-536
 
