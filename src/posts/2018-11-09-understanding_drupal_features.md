@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Understanding Drupal Features"
+title: "Drupal Features and Tripal Fields"
 excerpt_separator:
 date: 2018-11-09
 tags:
@@ -8,23 +8,33 @@ tags:
  - tripal
 ---
 
-Note that I'm going to talk about features a lot in this post.  In the context of the Feature module, features are exported configurations within your site.  It's important that we don't confuse this with Chado features, which are genes, mRNAs, polypeptides, etc.
 
-[Features module guide](https://www.drupal.org/docs/7/modules/features)
+This guide will demonstrate using the [Features module](https://www.drupal.org/docs/7/modules/features) to export and import Tripal Bundle Field settings.
 
-It appears that some of the allure of Features is diminished in Drupal 8. Drupal 8 offers a configuration management system that focuses on the use case of going from a staging site to a production site.  Still, Features is more concerned with sharing configurations among multiple sites, so it will remain relevant for Drupal 8.
 
 ## A simple use case
 
 Consider a case where we have a development site where we configure a bundle (let's say the vanilla Analysis bundle) to have a custom set of Tripal Panes, with fields carefully reorganized into the panes.  In particular, we attach a Drupal File field to it, so we can host FASTA files easily.
 
-Once we've configured the field settings, how do we get them to the live site?  One option is to open our field configuration admin UI on both sites, and copy the details one at a time.  This method is [time consuming and error prone](https://www.drupal.org/docs/7/modules/features/features-moving-site-configuration-to-code), although it is relatively safe: we arent liable to accidentally break our database this way.
+Once we've configured the field settings, how do we get them to the live site?  One option is to open our field configuration admin UI on both sites, and copy the details one at a time.  This method is [time consuming and error prone](https://www.drupal.org/docs/7/modules/features/features-moving-site-configuration-to-code), although it is relatively safe: we aren't liable to accidentally break our database this way.  Alternatively, trying to transfer via writing database exports is dangerous, and liable to accidentally break our site.
 
 Is there a better way?  By exporting the field configuration as a feature!
 
-(note: drupal 8 has a feature designed ot handle development deployment!  But features remains relevant for sharing field configurations across sites).
+(note: Drupal 8 has a [feature designed to handle development deployment](https://www.phase2technology.com/blog/drupal-8-configuration-management): Configuration Management!  Drupal Features remains relevant for sharing field configurations across sites, so this guide may remain useful when Tripal moves to Drupal 8).
 
-## Mapping bundle IDs
+
+Note that I'm going to talk about features a lot in this post.  In the context of the Feature module, features are exported configurations within your site.  It's important that we don't confuse this with Chado features, which are genes, mRNAs, polypeptides, etc.
+
+## Why use Features
+###  Version control
+
+Because features get exported as their own module, this means you can treat them as such.  You can initialize a git repo, store them on GitHub, make discrete versions, and in general benefit from version control for something which otherwise would only be done via the UI.
+
+### How many Features?
+
+The features documentation links to a [great article about how to manage multiple features](http://kerasai.com/blog/2014/04/08/organizing-features-configuration-managment).  The suggestion that each bundle be its own feature is particularly helpful for Tripal, since we have so many bundles and its a reasonable, discrete way to manage and deploy configuration.  This means that mRNA and gene should be separate feature modules even though they are both `chado.feature` content types.
+
+### A Hazard: Mapping bundle IDs
 
 The main hurdle to overcome when mapping features is converting the field machine names across site.  This is because each field instance is specific to the bundle it's attached to, and bundle machine-names are from the bundle ID.  We can't assume bundle IDs are consistent across sites!
 
@@ -35,16 +45,7 @@ The general strategy is:
 -   remove the exported id value from the `features.inc` file,
 -   use hook alter to fetch the ID on the target deployment setup
 
-In our example, we want to export an image field attached to the vanilla Analysis bundle, so, we can use the ontology term associated to lookup the bundle and fetch the ID.
-
-## Version control
-
-Because features get exported as their own module, this means you can treat them as such.  You can initialize a git repo, store them on GitHub, make discrete versions, and in general benefit from version control for something which otherwise would only be done via the UI.
-
-## How many Features?
-
-The features documentation links to a [great article about how to manage multiple features](http://kerasai.com/blog/2014/04/08/organizing-features-configuration-managment).  The suggestion that each bundle be its own feature is particularly helpful for Tripal, since we have so many bundles and its a reasonable, discrete way to manage and deploy configuration.  This means that mRNA and gene should be separate feature modules even though they are both `chado.feature` content types.
-
+In our example below, the bundle ID's match on our site.  For default Tripal bundles, this should generally be the case.
 
 ## Tutorial
 
