@@ -51,7 +51,7 @@ In our example below, the bundle ID's match on our site.  For default Tripal bun
 
 ### Configuring the bundle fields
 
-Now, let's quickly configure a bundle.  Navigate to the structure of your site and select Analysis (**Admin ->Structure -> Tripal Content -> Analysis -> Manage Fields**).  Scroll to the bottom and add a new field of type File, with a machine name of `field_fasta_file‎`, and click **Save**. We can use the default field settings on the next page, so click **Save**.
+Now, let's quickly configure a bundle.  Navigate to the structure of your site and select Analysis (**Admin ->Structure -> Tripal Content -> Analysis -> Manage Fields**).  Scroll to the bottom and add a new field of type File, with a machine name of `field_fasta_file‎`, and click **Save**. Be sure to change the **Allowed extensions** parameter to accept `.fasta`, otherwise, it will only allow `.txt` files to be uploaded.  You may also want to increase the file size limit, as the default 2MB can be too small for many FASTA files.
 
 We now have to pick a CV term for our field.  Because we are providing a FASTA file field, we can use a term such as [FASTA (SWO:0000142)](https://www.ebi.ac.uk/ols/ontologies/ero/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2Fswo%2FSWO_0000142).  Please see the [Tripal vocabulary  guide](https://tripal.readthedocs.io/en/latest/user_guide/content_types/creating_content.html?highlight=term#manually-adding-a-term) for help loading a term.  Once the term is in our DB, we can assign it to this field.
 
@@ -90,7 +90,10 @@ In our case, the site we want to import to has the same Analysis bundle ID, so n
 
 Go to our target site, all we need to do is download and unpack the tra file we generated and enable the module (assuming the bundle ID issue is addressed).  I downloaded my file to `/var/www/html/sites/all/modules/custom/analysis_configuration.tar`, decompressed it (`tar -xvf analysis_configuration.tar`), and enabled it (`drush pm-enable tripal_configuration`).
 
-The field should now appear when you go to create a new analysis on your target site.  Unfortunately, the field still gets imported **disabled** due to Tripal preference, os we have to go to the display settings on our target site and enable the tripal pane/field.
+The field should now appear when you go to create a new analysis on your target site.  To check for yourself, create a new Analysis with dummy information: you'll be able to upload a file for the new file field.
+
+
+  Unfortunately, the field still gets imported **disabled** due to Tripal preference, os we have to go to the display settings on our target site and enable the tripal pane/field.
 
 ![field created disabled](/img/features_2018-11-09/created_disabled.png)
 
