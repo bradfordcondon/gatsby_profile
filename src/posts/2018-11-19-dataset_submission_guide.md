@@ -106,8 +106,15 @@ I changed the boolean checkbox to use the label for the display and reordered my
 This field configuration can be exported with the Drupal Feature module: see my guide on doing so [here](https://www.bradfordcondon.com/2018-11-09-understanding_drupal_features/).
 
 
-
-
 ## Managing user submissions with HQ
 
-## Promoting community leaders to deputies with HQ
+Next, we need to set up HQ.  This means:
+
+* giving permission to a user role for submitting HQ content for Organism
+* (optional) giving permission to a user role for approving HQ content
+
+Once HQ is set up, user submissions will appear in the admin dashboard.
+
+![admin dash](/img/datasets_to_hq_2018/admin_dash.png)
+
+ The admin can click on the title to edit and view the submission, or click on approve to create the record.  Once the submission is approved, it will be entered into Chado, and a Tripal entity will be created associated with it.
