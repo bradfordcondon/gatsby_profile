@@ -2,10 +2,11 @@
 layout: post
 title: "Configuring Analysis for User Submission with Tripal HQ"
 excerpt_separator:
-date: 2018-11-09
+date: 2018-11-19
 tags:
  - drupal
  - tripal
+ - chado
 ---
 
 
@@ -22,17 +23,15 @@ Tripal HQ provides a user-contributed content control center and administrative 
 
 ## Approach
 
-Tripal HQ will handle the emails, as well as the user and admin dashboards.  All that we need to do is configure our Analysis bundle to be suitable for user input.  
+Tripal HQ will handle the emails, as well as the user and admin dashboards.  All that we need to do is configure our Organism bundle to be suitable for user input.  If you need a primer on Tripal organisms, please see the [Tripal user's guide](https://tripal.readthedocs.io/en/latest/user_guide/example_genomics/organisms.html).
 
 ### Simple case: Organism
 
-The default organism bundle is quite simple.
-
-![vanilla organism](/img/datasets_to_hq_2018/vanilla_organism.png)
-
-Let's compare this to the datasets organism form:
+Let's look at the `tripal_chado_datasets` organism form:
 
 ![datasets organism](/img/datasets_to_hq_2018/datasets_organism.png)
+
+We want the create organism form to look similar to this, but to do it we'll have to remove a bunch of fields and add some new ones.
 
 Here's what we are going to do:
 
@@ -84,7 +83,7 @@ We'll therefore attach it as a **regular Drupal Field**.
 * Be sure to set up the help text with the message you want users to see.
 * After saving the field, leave the display disabled: we don't want this showing up on the organism page!
 
-![Adding the plain text field](/img/datasets_to_hq_2018/long_text.png)
+![Adding the plain text field](/img/datasets_to_hq_2018/long_text_field.png)
 
 
 We don't want to display this field, so leave the formatter disabled.
@@ -117,4 +116,7 @@ Once HQ is set up, user submissions will appear in the admin dashboard.
 
 ![admin dash](/img/datasets_to_hq_2018/admin_dash.png)
 
- The admin can click on the title to edit and view the submission, or click on approve to create the record.  Once the submission is approved, it will be entered into Chado, and a Tripal entity will be created associated with it.
+ The admin can click on the title to edit and view the submission, or click on approve to create the record.  Once the submission is approved, it will be entered into Chado, and a Tripal entity will be created associated with it.  Furthermore, HQ handles email events, and will notify users and admins of pending creation requests and their resolution.
+
+
+This field display is available for download [on GitHub here](https://github.com/NAL-i5K/tripal3_organism_layout).
