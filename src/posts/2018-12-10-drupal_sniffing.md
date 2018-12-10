@@ -48,7 +48,7 @@ Once the tool is configured, you can map it to a shortcut to make it easier to u
 
 Finally we want a continuous integration check so that when PRs are made, it runs the code sniffer and gives us feedback on style. I used Code Climate because its free for open source projects, but any service that lets you specify what files to check and what standards to use will work.  https://docs.codeclimate.com/docs/configuring-your-analysis
 
-The configuration file to ensure that our Drupal codes are read against Drupal standards is simple: place this `.code_coverage.yml` file in your project root.
+The configuration file to ensure that our Drupal codes are read against Drupal standards is simple: place this `..codeclimate.yml` file in your project root.
 
 ```yaml
 version: "2"
