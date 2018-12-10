@@ -2,15 +2,13 @@
 layout: post
 title: "PHPstorm and Drupal styling"
 excerpt_separator: <!--more-->
-date: 2018-09-24
+date: 2018-12-10
 tags:
  - drupal
  - tripal
  - documentation
  - phpstorm
 ---
-
-# Introduction
 
 Every programming language and subcommunity has rules regarding [code styling](https://en.wikipedia.org/wiki/Programming_style). Drupal [provides a set of style standards](https://www.drupal.org/docs/develop/standards), but how do you know that your code is meeting them?  If a collaborator contributes to your project, how do you know that they followed the guidelines?
 
@@ -40,7 +38,7 @@ Argument would be set to: `--standard=Drupal $fileDir$/$FileName$`
 working directory: `$ProjectFileDir$`
 
 
-![phpcbf script configuration](/assets/img/phpcbf_script_config.png)
+![phpcbf script configuration](/img/phpcbf_script_config.png)
 
 (Note:  If you get a weird error about your working directory, double check your working directory argument!  I had whitespace in mine).
 
