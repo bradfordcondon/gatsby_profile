@@ -9,13 +9,17 @@ tags:
  - documentation
 ---
 
-This miniature guide will walk us through adding Code Climate coverage reports.
+This miniature guide will walk us through adding Code Climate coverage reports.  I assume you are using the Tripal Test Suite helper to set up your Travis CI.
 
-This guide is written assuming you are using the Tripal Test Suite helper to set up your Travis CI.
+The basic steps we will take:
 
 * Enable Code Climate
 * Generate coverage reports with Travis
 * Configure Code Climate to receive reports
+
+
+>![File by file coverage](/img/file_by_file_code_coverage.png)
+>Code coverage is a very rough metric of which files are well-tested.
 
 ### Enable Code Climate
 
@@ -95,31 +99,23 @@ I also map the Travis specific environmental git variables into generic ones tha
 
 #### After Script
 
-Finally we need to do the after script processing.  We run the `format-coverage` app because our tests run in a docker container....
-
-
-TODO:
-
-is this necessary?  the prefix tags dont match!
-
+Finally we need to do the after script processing.  This means calling  `./cc-test-reporter after-build` and providing the `clover.xml` report.  We additionally specify the `-p` parameter for the root path in the docker container where the tests/analysis took place (which is different from the Travis root).
 
 
 ```yaml
 after_script:
-  - ./cc-test-reporter format-coverage --prefix /modules/tripal_eutils
   - ./cc-test-reporter after-build clover.xml --debug -t clover -p /var/www/html/sites/all/modules/custom/tripal_eutils --exit-code $TRAVIS_TEST_RESULT
   -
 ```
 
 ### All set!
 
-The finished `.travis.yml` file is below.
+The finished `.travis.yml` file is below.  Your coverage report should now appear in your code climate dashboard!  In addition, pull request checks will take place based on the criteria you set in **Repo Settings** area of Code Climate.
 
 ```yaml
 
 language: php
 
-# Add php version so composer doesn't complain
 php:
   - 7.1
 
@@ -146,8 +142,6 @@ script:
   - docker exec -it tripal bash -c "cd /modules/tripal_eutils && composer install && DRUPAL_ROOT=/var/www/html IS_TRAVIS=TRUE ./vendor/bin/phpunit --coverage-clover ./clover.xml"
 
 after_script:
-  - ./cc-test-reporter format-coverage --prefix /modules/tripal_eutils
   - ./cc-test-reporter after-build clover.xml --debug -t clover -p /var/www/html/sites/all/modules/custom/tripal_eutils --exit-code $TRAVIS_TEST_RESULT
-
 
 ```
