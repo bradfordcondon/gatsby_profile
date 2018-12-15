@@ -1,14 +1,33 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import {Navbar, NavbarBrand, Nav, NavItem, NavLink} from "reactstrap";
+import {Nav, NavItem, NavLink} from "reactstrap";
 
-const Navcomponent = () => (<div>
-  <Navbar light="light" expand="md" style={{display: 'flex', justifyContent: 'center'}}>
-    <NavbarBrand href="/">Home</NavbarBrand>
-    <NavbarBrand href="/tags">All Post Tags</NavbarBrand>
-    <NavbarBrand href="/tags/tripal/">Tripal Posts</NavbarBrand>
-    <NavbarBrand href="/cv">CV</NavbarBrand>
-  </Navbar>
-</div>);
+function isActive(path) {
+    if (path === '/' && window.location.pathname.length === 0) {
+        return true
+    }
 
-export default Navcomponent
+    return window.location.pathname === path
+}
+
+const NavComponent = () => (
+    <div className="">
+        <Nav className={'nav-tabs ml-0 text-large'}>
+            <NavItem>
+                <NavLink href={'/'} className={isActive('/') ? 'active' : ''}>Home</NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="/tags" className={isActive('/tags') ? 'active' : ''}>All Post Tags</NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="/tags/tripal" className={isActive('/tags/tripal') ? 'active' : ''}>Tripal
+                    Posts</NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="/cv" className={isActive('/cv') ? 'active' : ''}>CV</NavLink>
+            </NavItem>
+        </Nav>
+    </div>
+);
+
+export default NavComponent

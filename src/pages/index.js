@@ -5,79 +5,85 @@ import {Link, graphql} from "gatsby"
 import Layout from "../components/layout"
 import {Badge, Col, Row, Card, CardImg, CardTitle, CardBody, CardSubtitle, CardText} from "reactstrap";
 
-export default({data}) => {
+export default (page) => {
+    const data = page.data
 
-  const colorBadge = {
-    'drupal': "primary",
-    'tripal': "success",
-    'documentation': "danger",
-    'chado': 'info',
-    'databases': 'primary',
-    'bioinformatics': 'light',
-    'web-dev': 'warning',
-    'travis-ci': 'dark',
-    'd3': 'success',
-    'mysql': "info"
-  }
+    const colorBadge = {
+        'drupal': "primary",
+        'tripal': "success",
+        'documentation': "danger",
+        'chado': 'info',
+        'databases': 'primary',
+        'bioinformatics': 'light',
+        'web-dev': 'warning',
+        'travis-ci': 'dark',
+        'd3': 'success',
+        'mysql': "info"
+    }
 
-  return (<Layout>
-<Row>
-      <Col xs="3">
-        <Card >
-          <CardImg style={{maxWidth: 250}} src="/img/condon_face.jpg" alt="Bradford Condon PhD" />
-            <CardBody>
-                     <CardText>Hello!  I am a full stack web/mobile developer, data scientist, and bionformatician.</CardText>
-<CardText>If you're looking for <b>Tripal</b> help, you're in the right place.</CardText>
-                 </CardBody>
-          </Card>
-      </Col>
+    return (<Layout>
+        <Row>
+            <Col md="3">
+                <Card className={'mb-4'}>
+                    <CardImg style={{maxWidth: 250, margin: '0 auto'}} src="/img/condon_face.jpg"
+                             alt="Bradford Condon PhD"/>
+                    <CardBody>
+                        <CardText>Hello! I am a full stack web/mobile developer, data scientist, and
+                            bionformatician.</CardText>
+                        <CardText>If you're looking for <b>Tripal</b> help, you're in the right place.</CardText>
+                    </CardBody>
+                </Card>
+            </Col>
 
-    <Col xs="9">
-      {
-        data.allMarkdownRemark.edges.map(({node}) => (<Card className={"mb-4"} key={node.id}>
-          <Link to={node.fields.slug} className={css `
-                text-decoration: none;
-                color: inherit;
-              `}>
-            <div class="card-header">
-              {node.frontmatter.title}
-            </div>
-            <span className={css `
-                    color: #bbb;
-                  `} style={{
-                marginLeft: '10px'
-              }}>
-              <div>
-                {node.frontmatter.date}
-                {
-                  node.frontmatter.tags
-                    ? node.frontmatter.tags.map(function(name, index) {
+            <Col md="9">
+                {data.allMarkdownRemark.edges.map(({node}) => (
+                    <Card className={"mb-4"} key={node.id}>
+                        <Link
+                            to={node.fields.slug}
+                            style={{textDecoration: 'none', color: 'inherit'}}>
+                            <div className="card-header px-3">
+                                {node.frontmatter.title}
+                            </div>
+                            <div className="p-3">
+                                <div className={'mb-2'} style={{
+                                    color: '#bbb',
+                                }}>
+                                    <span className="mr-2">{node.frontmatter.date}</span>
+                                    <div className={'float-right'}>
+                                        {
+                                            node.frontmatter.tags
+                                                ? node.frontmatter.tags.map(function (name, index) {
 
-                      let color = colorBadge[name]
-                        ? colorBadge[name]
-                        : "secondary"
+                                                    let color = colorBadge[name]
+                                                        ? colorBadge[name]
+                                                        : "secondary"
 
-                      return <Badge style={{
-                          marginLeft: '5px',
-                          marginRight: '5px'
-                        }} color={color}>{name}</Badge>;
-                    })
-                    : ''
+                                                    return (
+                                                        <Badge
+                                                            key={index}
+                                                            style={{margin: '0 2px'}}
+                                                            color={color}>
+                                                            {name}
+                                                        </Badge>
+                                                    )
+                                                })
+                                                : ''
+                                        }
+                                    </div>
+                                </div>
+                                <div className="card-text">
+                                    <p>{node.excerpt}</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </Card>))
                 }
-              </div>
-            </span>
-            <div class="card-text" style={{marginLeft: '10px'}}>
-            <p>{node.excerpt}</p>
-            </div>
-          </Link>
-        </Card>))
-      }
-    </Col>
-    </Row>
-  </Layout>)
+            </Col>
+        </Row>
+    </Layout>)
 }
 
-export const query = graphql `
+export const query = graphql`
   query {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount

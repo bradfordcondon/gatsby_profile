@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600');
 @import '~react-md/src/scss/react-md';
+
 $md-primary-color: $md-grey-400;
 $md-secondary-color: $md-red-800;
 $md-tertiary-color: $md-grey-300;
 
 .main-container,
 .darker-background {
-    background-color: $md-tertiary-color;
+  background-color: $md-tertiary-color;
 }
 
 a:link {
-    color: $md-secondary-color;
-    text-decoration: none;
+  //color: $md-secondary-color;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, button, input, textarea, html,
+body {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 }
