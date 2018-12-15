@@ -3,11 +3,12 @@ import {Link} from 'gatsby'
 import {Nav, NavItem, NavLink} from "reactstrap";
 
 function isActive(path) {
-    if (path === '/' && window.location.pathname.length === 0) {
+    if (path === '/' && typeof window !== 'undefined' && window.location.pathname.length === 0) {
         return true
     }
-
-    return window.location.pathname === path
+if (typeof window !== 'undefined'){
+  return window.location.pathname === path
+}
 }
 
 const NavComponent = () => (
