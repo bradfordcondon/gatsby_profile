@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, StaticQuery } from 'gatsby'
 import {
   Collapse,
   Jumbotron,
@@ -12,10 +12,28 @@ import {
   Button
 } from "reactstrap";
 
+import Search from "./search"
+
+import graphql from 'gatsby'
 import Navcomponent from './Navcomponent'
 
 const Header = () => (
   <div>
+    <StaticQuery
+    query={graphql`
+      query SearchIndexQuery {
+        siteSearchIndex {
+          index
+        }
+      }
+    `}
+    render={data => (
+      <header>
+        ... header stuff...
+        <Search searchIndex={data.siteSearchIndex.index} />
+      </header>
+    )}
+  />
   <Jumbotron color = 'red' style={{paddingBottom: '0px'}}>
     <Link to="/"
       style={{

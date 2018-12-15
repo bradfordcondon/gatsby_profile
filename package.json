@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.1.1",
     "bootstrap": "^4.0.0-beta.2",
     "emotion": "^9.2.12",
     "gatsby": "^2.0.19",
@@ -12,7 +13,7 @@
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.1",
-    "gatsby-plugin-sharp": "^2.0.7",
+    "gatsby-plugin-sharp": "^2.0.15",
     "gatsby-plugin-typography": "^2.2.1",
     "gatsby-remark-prismjs": "^3.0.3",
     "gatsby-source-filesystem": "^2.0.7",
@@ -44,6 +45,7 @@
     "deploy": "gatsby build && gh-pages -d public"
   },
   "devDependencies": {
+    "@andrew-codes/gatsby-plugin-elasticlunr-search": "^1.0.4",
     "gatsby-plugin-sass": "^2.0.3",
     "gh-pages": "^2.0.1",
     "prettier": "^1.14.2"
