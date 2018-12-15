@@ -13,6 +13,7 @@ export default class Search extends Component {
     }
   }
 
+
   render() {
     return (
       <div>
@@ -20,8 +21,7 @@ export default class Search extends Component {
         <ul>
           {this.state.results.map(page => (
             <li key={page.id}>
-               <Link to={"/" + page.path}>{page.title}</Link>
-               {": " + page.tags.join(`,`)}
+               <Link to={"/" + page.slug}>{page.title}</Link>
             </li>
           ))}
         </ul>
@@ -45,7 +45,5 @@ export default class Search extends Component {
         // Map over each ID and return the full document
         .map(({ ref }) => this.index.documentStore.getDoc(ref)),
     })
-    console.log(this.index
-      .search(query, {}))
   }
 }

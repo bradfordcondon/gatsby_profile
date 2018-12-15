@@ -78,7 +78,7 @@ module.exports = {
         display: 'minimal-ui',
       },
     },
-    
+
     {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
             options: {
@@ -86,6 +86,7 @@ module.exports = {
                 fields: [
                     'title',
                     'tags',
+                    'slug'
                 ],
                 // How to resolve each field's value for a supported node type
                 resolvers: {
@@ -93,7 +94,7 @@ module.exports = {
                     MarkdownRemark: {
                         title: node => node.frontmatter.title,
                         tags: node => node.frontmatter.tags,
-                        path: node => node.frontmatter.path
+                        slug: node => node.fields.slug
                     },
                 },
               },
