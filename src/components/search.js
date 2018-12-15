@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Index } from "elasticlunr"
 import {Link} from "gatsby"
-
+import {DropdownMenu, DropdownItem} from 'reactstrap'
 
 // Search component
 export default class Search extends Component {
@@ -10,6 +10,7 @@ export default class Search extends Component {
     this.state = {
       query: ``,
       results: [],
+      dropdownOpen: false
     }
   }
 
@@ -18,13 +19,13 @@ export default class Search extends Component {
     return (
       <div>
         <input type="text" value={this.state.query} onChange={this.search} />
-        <ul>
+        <DropdownMenu isOpen={this.state.dropdownOpen}>
           {this.state.results.map(page => (
-            <li key={page.id}>
-               <Link to={"/" + page.slug}>{page.title}</Link>
-            </li>
+            <DropdownItem key={page.id}>
+               <Link class="nav-link" to={"/" + page.slug}>{page.title}</Link>
+            </DropdownItem>
           ))}
-        </ul>
+        </DropdownMenu>
       </div>
     )
   }
@@ -37,13 +38,24 @@ export default class Search extends Component {
   search = evt => {
     const query = evt.target.value
     this.index = this.getOrCreateIndex()
+    let results = this.index
+      .search(query, {})
+      // Map over each ID and return the full document
+      .map(({ ref }) => this.index.documentStore.getDoc(ref))
+
+      let show = true
+      console.log(results)
+
+      if (results.isEmpty()){
+        show = false
+      }
+      console.log(show)
+
     this.setState({
       query,
       // Query the index with search string to get an [] of IDs
-      results: this.index
-        .search(query, {})
-        // Map over each ID and return the full document
-        .map(({ ref }) => this.index.documentStore.getDoc(ref)),
+      results: results,
+      dropdownOpen: show
     })
   }
 }
