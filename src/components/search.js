@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Index } from "elasticlunr"
 import {Link} from "gatsby"
-import {DropdownMenu, DropdownItem} from 'reactstrap'
+import {ListGroup, ListGroupItem} from 'reactstrap'
 
 // Search component
 export default class Search extends Component {
@@ -10,7 +10,7 @@ export default class Search extends Component {
     this.state = {
       query: ``,
       results: [],
-      dropdownOpen: false
+      dropdownOpen: true
     }
   }
 
@@ -19,13 +19,13 @@ export default class Search extends Component {
     return (
       <div>
         <input type="text" value={this.state.query} onChange={this.search} />
-        <DropdownMenu isOpen={this.state.dropdownOpen}>
+        <ListGroup      style={{margin: '0 2px'}}>
           {this.state.results.map(page => (
-            <DropdownItem key={page.id}>
-               <Link class="nav-link" to={"/" + page.slug}>{page.title}</Link>
-            </DropdownItem>
+            <ListGroupItem key={page.id}>
+               <Link className="nav-link" to={"/" + page.slug}>{page.title}</Link>
+            </ListGroupItem>
           ))}
-        </DropdownMenu>
+        </ListGroup>
       </div>
     )
   }
@@ -44,11 +44,11 @@ export default class Search extends Component {
       .map(({ ref }) => this.index.documentStore.getDoc(ref))
 
       let show = true
-      console.log(results)
-
-      if (results.isEmpty()){
-        show = false
-      }
+      // console.log(results)
+      //
+      // if (results.isEmpty()){
+      //   show = false
+      // }
       console.log(show)
 
     this.setState({
