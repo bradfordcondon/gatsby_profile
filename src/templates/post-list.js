@@ -11,7 +11,10 @@ import {
   CardTitle,
   CardBody,
   CardSubtitle,
-  CardText
+  CardText,
+  Nav,
+  NavItem,
+  NavLink
 } from "reactstrap";
 
 
@@ -99,22 +102,30 @@ const data = this.props.data
             </Link>
           </Card>))
         }
+        <Nav>
         {!isFirst && (
-            <Link to={`/blog/${prevPage}`} rel="prev">
+          <NavItem>
+            <NavLink href={`/blog/${prevPage}`} rel="prev">
               ← Previous Page
-            </Link>
+            </NavLink>
+            </NavItem>
           )}
           {Array.from({ length: numPages }, (_, i) => (
-            <Link key={`pagination-number${i}`} to={`blog/${i === 0 ? "" : i}`}>
+<NavItem>
+            <NavLink href={`pagination-number${i}`} to={`blog/${i === 0 ? "" : i}`}>
               {i + 1}
-            </Link>
+            </NavLink>
+            </NavItem>
           ))}
 
           {!isLast && (
-            <Link to={`/blog/${nextPage}`} rel="next">
+            <NavItem>
+            <NavLink href={`/blog/${nextPage}`} rel="next">
               Next Page →
-            </Link>
+            </NavLink>
+            </NavItem>
           )}
+        </Nav>
       </Col>
     </Row>
   </Layout>)
