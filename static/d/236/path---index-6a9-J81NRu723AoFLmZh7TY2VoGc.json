@@ -1,0 +1,1 @@
+{"errors":[{"message":"Variable \"$skip\" is never used in operation \"blogListQuery\".","locations":[{"line":2,"column":3}]}],"pageContext":{}}
