@@ -17,7 +17,7 @@ export default class Search extends Component {
   render() {
     return (
       <div>
-        <input type="text" value={this.state.query} onChange={this.search} />
+        <input type="text" value={this.state.query} placeholder="search" onChange={this.search} />
         <ListGroup      style={{margin: '0 2px'}}>
           {this.state.results.map(page => (
             <ListGroupItem key={page.id}>
