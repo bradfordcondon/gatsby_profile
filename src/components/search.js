@@ -10,7 +10,6 @@ export default class Search extends Component {
     this.state = {
       query: ``,
       results: [],
-      dropdownOpen: true
     }
   }
 
@@ -43,19 +42,10 @@ export default class Search extends Component {
       // Map over each ID and return the full document
       .map(({ ref }) => this.index.documentStore.getDoc(ref))
 
-      let show = true
-      // console.log(results)
-      //
-      // if (results.isEmpty()){
-      //   show = false
-      // }
-      console.log(show)
-
     this.setState({
       query,
       // Query the index with search string to get an [] of IDs
       results: results,
-      dropdownOpen: show
     })
   }
 }

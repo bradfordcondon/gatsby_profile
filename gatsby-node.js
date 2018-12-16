@@ -20,11 +20,15 @@ exports.createPages = ({graphql, actions}) => {
     const {createPage} = actions
     const tagTemplate = path.resolve("src/templates/tags.js")
     const blogPostTemplate = path.resolve("src/templates/blog-post.js")
+    const listPage = path.resolve("src/templates/post-list.js")
 
     return new Promise((resolve, reject) => {
         graphql(`
       {
-          allMarkdownRemark {
+          allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              limit: 1000
+            ) {
             edges {
               node {
                 frontmatter{
@@ -43,15 +47,17 @@ exports.createPages = ({graphql, actions}) => {
                 return Promise.reject(result.errors)
             }
             const posts = result.data.allMarkdownRemark.edges
-
-            createPaginatedPages({
-                edges: posts,
-                createPage: createPage,
-                pageTemplate: "src/pages/index.js",
-                pageLength: 10, // This is optional and defaults to 10 if not used
-                pathPrefix: "", // This is optional and defaults to an empty string if not used
-                context: {} // This is optional and defaults to an empty object if not used
-            });
+            const postsPerPage = 6
+            const numPages = Math.ceil(posts.length / postsPerPage)
+            Array.from({ length: numPages }).forEach((_, i) => {
+              createPage({
+                          path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+                          component: listPage,
+                          context: {
+                            limit: postsPerPage,
+                            skip: i * postsPerPage,
+                          },
+                        })})
 
             posts.forEach(({node}) => {
                 createPage({
