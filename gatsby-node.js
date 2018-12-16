@@ -51,11 +51,13 @@ exports.createPages = ({graphql, actions}) => {
             const numPages = Math.ceil(posts.length / postsPerPage)
             Array.from({ length: numPages }).forEach((_, i) => {
               createPage({
-                          path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+                          path: i === 0 ? `/blog` : `/blog/${i}`,
                           component: listPage,
                           context: {
                             limit: postsPerPage,
                             skip: i * postsPerPage,
+                            numPages,
+                            currentPage: i
                           },
                         })})
 
@@ -64,8 +66,6 @@ exports.createPages = ({graphql, actions}) => {
                     path: node.fields.slug,
                     component: blogPostTemplate,
                     context: {
-                        // Data passed to context is available
-                        // in page queries as GraphQL variables.
                         slug: node.fields.slug,
                     },
                 })
