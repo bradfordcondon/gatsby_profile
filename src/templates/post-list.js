@@ -36,9 +36,9 @@ const data = this.props.data
   }
   //Page location
  const { currentPage, numPages } = this.props.pageContext
- const isFirst = currentPage === 1
+ const isFirst = currentPage === 0
  const isLast = currentPage === numPages
- const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
+ const prevPage = currentPage - 1 === 0 ? "/" : (currentPage - 1).toString()
  const nextPage = (currentPage + 1).toString()
 
   return (<Layout>
@@ -99,24 +99,24 @@ const data = this.props.data
             </Link>
           </Card>))
         }
+        {!isFirst && (
+            <Link to={`/blog/${prevPage}`} rel="prev">
+              ← Previous Page
+            </Link>
+          )}
+          {Array.from({ length: numPages }, (_, i) => (
+            <Link key={`pagination-number${i}`} to={`blog/${i === 0 ? "" : i}`}>
+              {i + 1}
+            </Link>
+          ))}
+
+          {!isLast && (
+            <Link to={`/blog/${nextPage}`} rel="next">
+              Next Page →
+            </Link>
+          )}
       </Col>
     </Row>
-    {!isFirst && (
-        <Link to={`/blog/${prevPage}`} rel="prev">
-          ← Previous Page
-        </Link>
-      )}
-      {Array.from({ length: numPages }, (_, i) => (
-        <Link key={`pagination-number${i}`} to={`blog/${i === 0 ? "" : i}`}>
-          {i + 1}
-        </Link>
-      ))}
-
-      {!isLast && (
-        <Link to={`/blog/${nextPage}`} rel="next">
-          Next Page →
-        </Link>
-      )}
   </Layout>)
 }
 }

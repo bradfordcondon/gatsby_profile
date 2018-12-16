@@ -78,6 +78,9 @@ export default (page) => {
                         </Link>
                     </Card>))
                 }
+                <Link to={`/blog/1`} rel="next">
+                  Read More Posts →
+                </Link>
             </Col>
         </Row>
     </Layout>)
@@ -85,7 +88,9 @@ export default (page) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      limit: 6
+      sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
