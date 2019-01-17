@@ -194,6 +194,8 @@ _Full day workshops developed & implemented:_
   - [Slides](https://www.slideshare.net/BradfordCondon1/ky-retail-foodseminar)
 * TreeSnap: A citizen Science Project and Mobile App to Tag Trees for Resistance.  Tree Resistance Conference, OH (2018)
   - [Slides](https://www.slideshare.net/BradfordCondon1/treesnap-tree-resistance-conference-2018)
+*  Tripal v3, the Collaborative Online Database Platform Supporting an International Community of Plant Genome Databases.  [Plant and Animal Genome Conference (PAG)](http://www.intlpag.org/2019/), San Diego, CA (2019)
+  - [Slides](https://www.slideshare.net/BradfordCondon1/tripal-v3-the-collaborative-online-database-platform-supporting-an-international-community-of-plant-genome-databases)
 
 ##### Posters
 
