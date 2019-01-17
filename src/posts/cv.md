@@ -157,13 +157,11 @@ UK-BLAST is an extracurricular support group for undergraduates performing genom
 * Spring 2012 PLPA 2015 TA:  Mushrooms, Molds, and Molecules.
 * Spring 2013 PLPA 2015 TA:  Mushrooms, Molds, and Molecules.
 
-_ _
-
 ##### [Center for Teaching Excellence](http://www.cte.cornell.edu/): _Cornell University_ 2011-2013
 
 _workshops (1 hour) developed & implemented:_
 
->* Classical teaching models and the psychology of learning
+* Classical teaching models and the psychology of learning
 * What do I want my students to learn? Identifying learning outcomes as the basis for instruction and assessment
 * Using library resources to enhance student’s research skills
 * Creating effective questions for iClickers and online quizzes
@@ -171,7 +169,7 @@ _workshops (1 hour) developed & implemented:_
 
 _Full day workshops developed & implemented:_
 
->* 2012 Chemistry TA training instructor
+* 2012 Chemistry TA training instructor
 * 2012 Teaching Excellence Practicum Instructor, CTE summer Institute
 
 #### Presentations
@@ -185,7 +183,7 @@ _Full day workshops developed & implemented:_
 * [AgBioData metadata committee](https://www.agbiodata.org/working_groups/metadata_persistence_wg). Salt Lake City, UT (2017)
 * [GMOD Hackathon](http://www.bradfordcondon.com/2018/01/12/gmod_day_1_2018/), [Plant and Animal Genomes Conference](http://www.intlpag.org/). San Diego CA (2018)
 * [Tripal 2018 Hackathon](http://www.bradfordcondon.com/2018/01/17/tripal_at_pag_2018/) Instructor, [Plant and Animal Genomes Conference](http://www.intlpag.org/). San Diego CA (2018)
-* Tripal 2019 Hackathon group leader, [Plant and Animal Genomes Conference](http://www.intlpag.org/). San Diego CA (2018)
+* Tripal 2019 Hackathon group leader, [Plant and Animal Genomes Conference](http://www.intlpag.org/). San Diego CA (2019)
 
 ##### Talks
 * Joint Genome Institute Dothideomycete jamboree. Walnut Creek, CA (2008)
