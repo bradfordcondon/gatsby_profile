@@ -20,7 +20,11 @@ May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
 
 ## Employment
 
-* September 2018 to present: IT Specialist III, University of Tennessee
+* April 2019 to present: Software Developer, [CABEM technologies](https://www.cabem.com/)
+
+> Develop and implement OAS 3.0 compliant API.  Write back-end code for corporate web applications.
+
+* September 2018 to April 2019: IT Specialist III, University of Tennessee
 
 > Tripal core developer.  Collaborative Tripal developer for the Hardwood Genomics Web and the USDA-NAL I5K project.
 
@@ -212,6 +216,18 @@ _Full day workshops developed & implemented:_
 ### In Review
 
 Lumibao, C, **Condon, B**, Kinkel , L, May, G, Seabloom, E, Borer, E 2018.  Where you are matters: site-specific responses of fungal endophyte communities in _Andropogon gerardii_ to fertilization and herbivory.  Ecology, In Review.
+
+
+
+### Accepted, pre-publication
+
+TreeSnap: A citizen science app connecting tree enthusiasts and forest scientists
+Crocker, E, **Condon, B,** Almsaeed, A, Jarret, B, Nelson, C D, Abbot, A, Main, D, Staton, M 2019.  Plants, People, Planet, accepted.
+
+
+Effects of nutrient supply, herbivory, and host community on fungal endophyte diversity.  Seabloom, S, **Condon, B**, Lumibao, C, Kinkel, L, May, G, Borer, E 2019.  Ecology, accepted.
+
+Tripal v3: an ontology-based redesign for better data accessibility and exchange amongst online community databases.  Spoor, S, Cheng, C, Sanderson, L, **Condon, B**, et al.  2019.  Database, accepted.
 
 
 ### Peer-reviewed
