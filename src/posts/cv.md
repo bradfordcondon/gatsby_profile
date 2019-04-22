@@ -218,6 +218,7 @@ _Full day workshops developed & implemented:_
 Lumibao, C, **Condon, B**, Kinkel , L, May, G, Seabloom, E, Borer, E 2018.  Where you are matters: site-specific responses of fungal endophyte communities in _Andropogon gerardii_ to fertilization and herbivory.  Ecology, In Review.
 
 
+Tripal v3: an ontology-based redesign for better data accessibility and exchange amongst online community databases.  Spoor, S, Cheng, C, Sanderson, L, **Condon, B**, et al.  2019.  Database, accepted.
 
 ### Accepted, pre-publication
 
@@ -227,7 +228,6 @@ Crocker, E, **Condon, B,** Almsaeed, A, Jarret, B, Nelson, C D, Abbot, A, Main, 
 
 Effects of nutrient supply, herbivory, and host community on fungal endophyte diversity.  Seabloom, S, **Condon, B**, Lumibao, C, Kinkel, L, May, G, Borer, E 2019.  Ecology, accepted.
 
-Tripal v3: an ontology-based redesign for better data accessibility and exchange amongst online community databases.  Spoor, S, Cheng, C, Sanderson, L, **Condon, B**, et al.  2019.  Database, accepted.
 
 
 ### Peer-reviewed
