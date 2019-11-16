@@ -17,12 +17,11 @@ August 2013, PhD in Plant Pathology & Plant-Microbe Interactions, Cornell Univer
 
 May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
 
-
 ## Employment
 
-* April 2019 to present: Software Developer, [CABEM technologies](https://www.cabem.com/)
+* April 2019 to present: Full stack Software Developer, [CABEM technologies](https://www.cabem.com/)
 
-> Develop and implement OAS 3.0 compliant API.  Write back-end code for corporate web applications.
+> Develop and implement OAS 3.0 compliant API using PHP Slim and custom frameworks.  Design and build UIs with React. Manage support and development workflow with gitlab and Jira.
 
 * September 2018 to April 2019: IT Specialist III, University of Tennessee
 
@@ -100,7 +99,7 @@ Code:
       * Genome assembly and annotation
       * Phylogenetics
 
-  * Programming languages: **R, Perl, javascript, PHP, CSS, Ruby, SQL**
+  * Programming languages: **R, Perl, javascript, PHP, CSS,SASS, Ruby, Python, SQL**
   * Frameworks: **Laravel, Drupal, Wordpress, React, React Native**
 
 #### Molecular biology
@@ -212,27 +211,17 @@ _Full day workshops developed & implemented:_
 
 ## Publications
 
+Crocker, E, **Condon, B,** Almsaeed, A, Jarret, B, Nelson, C D, Abbot, A, Main, D, Staton, M (2019) TreeSnap: A citizen science app connecting tree enthusiasts and forest scientists  Plants, People, Planet https://doi.org/10.1002/ppp3.41
 
-### In Review
-
-Lumibao, C, **Condon, B**, Kinkel , L, May, G, Seabloom, E, Borer, E 2018.  Where you are matters: site-specific responses of fungal endophyte communities in _Andropogon gerardii_ to fertilization and herbivory.  Ecology, In Review.
-
-
-Tripal v3: an ontology-based redesign for better data accessibility and exchange amongst online community databases.  Spoor, S, Cheng, C, Sanderson, L, **Condon, B**, et al.  2019.  Database, accepted.
-
-### Accepted, pre-publication
-
-TreeSnap: A citizen science app connecting tree enthusiasts and forest scientists
-Crocker, E, **Condon, B,** Almsaeed, A, Jarret, B, Nelson, C D, Abbot, A, Main, D, Staton, M 2019.  Plants, People, Planet, accepted.
-
-
-Effects of nutrient supply, herbivory, and host community on fungal endophyte diversity.  Seabloom, S, **Condon, B**, Lumibao, C, Kinkel, L, May, G, Borer, E 2019.  Ecology, accepted.
-
-
-
-### Peer-reviewed
+Spoor, S, Cheng, C, Sanderson, L-A,  **Condon, B**, et al. (2019) Tripal v3: an ontology-based toolkit for construction of FAIR biological community databases. Database, baz077, https://doi.org/10.1093/database/baz077
 
 **Condon, B**, Almsaeed, A, West, J, Chen, M, Staton, M (2018).  Tripal Developer Toolkit.  Database, bay099 DOI: https://doi.org/10.1093/database/bay099
+
+Lumibao, C, **Condon, B**, Kinkel , L, May, G, Seabloom, E, Borer, E Site‐specific responses of foliar fungal microbiomes to nutrient addition and herbivory at different spatial scales.  Ecology and Evolution, October 2019. https://doi.org/10.1002/ece3.5711
+
+
+Seabloom, E, **Condon, B**, Kinkel, L, Komatsu, K, Lumibao, C, May, G, McCulley, R, Borer, E.(2019) Effects of nutrient supply, herbivory, and host community on fungal endophyte diversity.  Ecology,  . https://doi.org/10.1002/ecy.2758
+
 
 **Condon, B.**, Elliott, C, Gonzalez, J, Yun, S, Akagi, Y, Wiesner-Hanks, T, Kodama, M, Turgeon, G (2018).  Clues to an evolutionary mystery: the genes for T-toxin, enabler of the devastating 1970 Southern Corn Leaf Blight epidemic, are present in ancestral species, suggesting an ancient origin.  _MPMI_ Molecular Plant-Microbe Interactions 2018 31:11, 1154-1165.  DOI: https://doi.org/10.1094/MPMI-03-18-0070-R
 
