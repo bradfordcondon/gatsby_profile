@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import kebabCase from "lodash/kebabCase"
 // Components
 import { Link, graphql } from "gatsby"
+import * as _ from "lodash"
+
 
 const TagsPage = ({
   data: {
@@ -14,13 +16,18 @@ const TagsPage = ({
       siteMetadata: { title },
     },
   },
-}) => (
+}) => {
+
+let sorted = _.sortBy(group, 'totalCount').reverse();
+console.log(sorted)
+
+  return (
   <Layout>
   <div>
     <div>
       <h1>Tags</h1>
       <ul>
-        {group.map(tag => (
+        {sorted.map(tag => (
           <li key={tag.fieldValue}>
             <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
               {tag.fieldValue} ({tag.totalCount})
@@ -31,7 +38,7 @@ const TagsPage = ({
     </div>
   </div>
   </Layout>
-)
+)}
 
 TagsPage.propTypes = {
   data: PropTypes.shape({

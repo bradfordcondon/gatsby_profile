@@ -1,5 +1,4 @@
 import React from "react"
-import {css} from "react-emotion"
 import {Link, graphql} from "gatsby"
 //import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
@@ -18,7 +17,11 @@ export default (page) => {
         'web-dev': 'warning',
         'travis-ci': 'dark',
         'd3': 'success',
-        'mysql': "info"
+        'mysql': "info",
+        'sublime': "primary",
+        "notes": "warning",
+        "testing": "light",
+        "tips": "light"
     }
 
     return (<Layout>
@@ -30,7 +33,6 @@ export default (page) => {
                     <CardBody>
                         <CardText>Hello! I am a full stack web/mobile developer, data scientist, and
                             bionformatician.</CardText>
-                        <CardText>If you're looking for <b>Tripal</b> help, you're in the right place.</CardText>
                     </CardBody>
                 </Card>
             </Col>
