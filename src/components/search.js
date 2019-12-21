@@ -13,17 +13,23 @@ export default class Search extends Component {
     }
   }
 
-
   render() {
     return (
-      <div>
+      <div className="searchbox">
         <input type="text" value={this.state.query} placeholder="search" onChange={this.search} />
         <ListGroup      style={{margin: '0 2px'}}>
-          {this.state.results.map(page => (
+          {this.state.results.map((page, key) => {
+
+            if( key > 3 ){
+              return null
+            }
+            return(
+
+
             <ListGroupItem key={page.id}>
                <Link className="nav-link" to={"/" + page.slug}>{page.title}</Link>
             </ListGroupItem>
-          ))}
+          )})}
         </ListGroup>
       </div>
     )

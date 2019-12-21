@@ -17,7 +17,6 @@ const Header = () => (
       }
     `}
     render={data => (
-      <div>
       <Jumbotron className={'pb-0 pt-3 border-bottom'} style={{borderColor: '#ccc'}}>
           <div className="container">
               <div className="d-flex justify-content-between">
@@ -35,7 +34,6 @@ const Header = () => (
               <Navcomponent/>
           </div>
       </Jumbotron>
-      </div>
     )}
   />
 
