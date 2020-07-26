@@ -1,13 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Layout from "../components/layout"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Layout from '../components/layout'
 
 // Utilities
-import kebabCase from "lodash/kebabCase"
+import kebabCase from 'lodash/kebabCase'
 // Components
-import { Link, graphql } from "gatsby"
-import * as _ from "lodash"
-
+import { Link, graphql } from 'gatsby'
+import * as _ from 'lodash'
 
 const TagsPage = ({
   data: {
@@ -17,28 +16,28 @@ const TagsPage = ({
     },
   },
 }) => {
-
-let sorted = _.sortBy(group, 'totalCount').reverse();
-console.log(sorted)
+  let sorted = _.sortBy(group, 'totalCount').reverse()
+  console.log(sorted)
 
   return (
-  <Layout>
-  <div>
-    <div>
-      <h1>Tags</h1>
-      <ul>
-        {sorted.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-  </Layout>
-)}
+    <Layout>
+      <div>
+        <div>
+          <h1>Tags</h1>
+          <ul>
+            {sorted.map(tag => (
+              <li key={tag.fieldValue}>
+                <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                  {tag.fieldValue} ({tag.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </Layout>
+  )
+}
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
@@ -67,9 +66,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      limit: 2000
-    ) {
+    allMarkdownRemark(limit: 2000) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount

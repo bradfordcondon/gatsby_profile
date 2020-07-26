@@ -13,8 +13,5 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Image = () => (
-  <StaticQuery
-  />
-)
+const Image = () => <StaticQuery />
 export default Image

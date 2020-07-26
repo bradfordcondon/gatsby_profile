@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import { Index } from "elasticlunr"
-import {Link} from "gatsby"
-import {ListGroup, ListGroupItem} from 'reactstrap'
+import React, { Component } from 'react'
+import { Index } from 'elasticlunr'
+import { Link } from 'gatsby'
+import { ListGroup, ListGroupItem } from 'reactstrap'
 
 // Search component
 export default class Search extends Component {
@@ -16,20 +16,25 @@ export default class Search extends Component {
   render() {
     return (
       <div className="searchbox">
-        <input type="text" value={this.state.query} placeholder="search" onChange={this.search} />
-        <ListGroup      style={{margin: '0 2px'}}>
+        <input
+          type="text"
+          value={this.state.query}
+          placeholder="search"
+          onChange={this.search}
+        />
+        <ListGroup style={{ margin: '0 2px' }}>
           {this.state.results.map((page, key) => {
-
-            if( key > 3 ){
+            if (key > 3) {
               return null
             }
-            return(
-
-
-            <ListGroupItem key={page.id}>
-               <Link className="nav-link" to={"/" + page.slug}>{page.title}</Link>
-            </ListGroupItem>
-          )})}
+            return (
+              <ListGroupItem key={page.id}>
+                <Link className="nav-link" to={'/' + page.slug}>
+                  {page.title}
+                </Link>
+              </ListGroupItem>
+            )
+          })}
         </ListGroup>
       </div>
     )
