@@ -26,76 +26,86 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-f493d35fc84509bc7cc0.js"
+    "url": "webpack-runtime-327a3270b70e6870f71a.js"
   },
   {
-    "url": "app.319712d3e7fffa8163a7.css"
+    "url": "styles.a77e03b75fc09339b257.css"
   },
   {
-    "url": "app-edba9b58f421c5381046.js"
+    "url": "styles-89fd2ae28bdf06750a71.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-684d80c2ccfadb25b000.js"
+    "url": "framework-a38040c4749cf445737f.js"
+  },
+  {
+    "url": "app-52ba719cfb44917f5675.js"
+  },
+  {
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-a6a66bbf02bb8377a480.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "effb2147cd4793c2ccf7c14c6997ce59"
+    "revision": "cfef358759898027cdd35e173156ba11"
   },
   {
-    "url": "0.fbeb44530cd367aa991f.css"
-  },
-  {
-    "url": "1.baa6d10e93248c062047.css"
-  },
-  {
-    "url": "component---src-pages-404-js-87ba65eca86281aed268.js"
-  },
-  {
-    "url": "1-d1d3c1a86d91a8629c18.js"
-  },
-  {
-    "url": "0-bf0a7401263d8684ff0f.js"
-  },
-  {
-    "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
-    "revision": "c2508676a2f33ea9f1f0bf472997f9a0"
-  },
-  {
-    "url": "static/d/520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E.json",
-    "revision": "c2508676a2f33ea9f1f0bf472997f9a0"
+    "url": "polyfill-b4c19884e237349d4e5a.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "55a9292126f8836e91e5d40b0a8cb54f"
+    "revision": "5e9e88178e80b1f8712a424c7666b0d0"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
-  whitelist: [/^[^?]*([^.?]{5}|\.html)(\?.*)?$/],
-  blacklist: [/\?(.+&)?no-cache=1$/],
-});
+workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, workbox.strategies.cacheFirst(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\page-data\/.*\/page-data\.json/, workbox.strategies.networkFirst(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, workbox.strategies.staleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, workbox.strategies.staleWhileRevalidate(), 'GET');
 
-workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, workbox.strategies.staleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https:/, workbox.strategies.networkFirst(), 'GET');
-"use strict";
+/* global importScripts, workbox, idbKeyval */
 
-/* global workbox */
-self.addEventListener("message", function (event) {
-  var api = event.data.api;
+importScripts(`idb-keyval-iife.min.js`)
 
-  if (api === "gatsby-runtime-cache") {
-    var resources = event.data.resources;
-    var cacheName = workbox.core.cacheNames.runtime;
-    event.waitUntil(caches.open(cacheName).then(function (cache) {
-      return Promise.all(resources.map(function (resource) {
-        return cache.add(resource).catch(function (e) {
-          // ignore TypeErrors - these are usually due to
-          // external resources which don't allow CORS
-          if (!(e instanceof TypeError)) throw e;
-        });
-      }));
-    }));
+const { NavigationRoute } = workbox.routing
+
+const navigationRoute = new NavigationRoute(async ({ event }) => {
+  let { pathname } = new URL(event.request.url)
+  pathname = pathname.replace(new RegExp(`^`), ``)
+
+  // Check for resources + the app bundle
+  // The latter may not exist if the SW is updating to a new version
+  const resources = await idbKeyval.get(`resources:${pathname}`)
+  if (!resources || !(await caches.match(`/app-52ba719cfb44917f5675.js`))) {
+    return await fetch(event.request)
   }
-});
+
+  for (const resource of resources) {
+    // As soon as we detect a failed resource, fetch the entire page from
+    // network - that way we won't risk being in an inconsistent state with
+    // some parts of the page failing.
+    if (!(await caches.match(resource))) {
+      return await fetch(event.request)
+    }
+  }
+
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  return await caches.match(offlineShell)
+})
+
+workbox.routing.registerRoute(navigationRoute)
+
+const messageApi = {
+  setPathResources(event, { path, resources }) {
+    event.waitUntil(idbKeyval.set(`resources:${path}`, resources))
+  },
+
+  clearPathResources(event) {
+    event.waitUntil(idbKeyval.clear())
+  },
+}
+
+self.addEventListener(`message`, event => {
+  const { gatsbyApi } = event.data
+  if (gatsbyApi) messageApi[gatsbyApi](event, event.data)
+})
