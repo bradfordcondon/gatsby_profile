@@ -131,8 +131,7 @@ export default class PostList extends Component {
               {Array.from({ length: numPages }, (_, i) => (
                 <NavItem>
                   <NavLink
-                    href={`pagination-number${i}`}
-                    to={`blog/${i === 0 ? '' : i}`}
+                    href={`/blog/${i}`}
                   >
                     {i + 1}
                   </NavLink>

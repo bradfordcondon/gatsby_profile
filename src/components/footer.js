@@ -10,17 +10,17 @@ const MyFooter = () => (
     style={{ display: 'flex', justifyContent: 'center' }}
   >
     <IconContext.Provider
-      value={{ color: 'blue', className: 'global-class-name', size: '5em' }}
+      value={{ color: '#007bff', className: 'icon-footer', size: '5em' }}
     >
       <a href="https://twitter.com/bradfordcondon">
         {' '}
-        <FaTwitter />
+        <FaTwitter size={20} />
       </a>
       <a href="https://github.com/bradfordcondon">
-        <FaGithub />
+        <FaGithub size={20}/>
       </a>
       <a href="https://www.linkedin.com/in/bradford-condon-0843823b/">
-        <FaLinkedin />
+        <FaLinkedin size={20} />
       </a>
     </IconContext.Provider>
   </div>

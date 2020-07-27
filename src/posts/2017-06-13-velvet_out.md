@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Velvet assembly output files
-date: 2017-6-13
+date: 2017-06-13
 tags:
   - bioinformatics
   - next-generation-sequencing
 ---
 
-This post is part 4 of a series on file formats, written for the 2017 UK-KBRIN Essentials of Next 
+This post is part 4 of a series on file formats, written for the 2017 UK-KBRIN Essentials of Next
 Generation Sequencing Workshop at the University of Kentucky.
 
-## Introduction 
+## Introduction
 The velvet manual is hosted online in wiki format.  You can find the section on output files [here](https://github.com/dzerbino/velvet/wiki/Manual#output-files).  I'll be including relevant quotes from the manual.  I also found [this site](http://davetang.org/wiki/tiki-index.php?page=Velvet) helpful, and some of the examples are taken from here.
 Ultimately the stats files included with the assembly can be more confusing than helpful.  Don't be too concerned if you don't understand all of the metrics.
 
@@ -18,11 +18,11 @@ Below is a brief guide to the files included in the output.
 
 ## contigs.fa
 
-From the manual: 
+From the manual:
 
 >This fasta file contains the sequences of the contigs longer than 2k, where k is the word-length used in velveth. If you have specified a min_contig_lgth threshold, then the contigs shorter than that value are omitted.
 
-## stats.txt 
+## stats.txt
 
 This file describes the nodes in the assembly and will look like the below example.
 
@@ -62,8 +62,7 @@ There is one header line for the entire graph, which lists the number of nodes, 
 Then, each node has a block with the following format:
 
 ```
- NODE $NODE_ID $COV_SHORT1 $O_COV_SHORT1 $COV_SHORT2 $O_COV_SHORT2 $ENDS_OF_KMERS_OF_NODE $ENDS_OF_KMERS_OF_TWIN_NODE 
+ NODE $NODE_ID $COV_SHORT1 $O_COV_SHORT1 $COV_SHORT2 $O_COV_SHORT2 $ENDS_OF_KMERS_OF_NODE $ENDS_OF_KMERS_OF_TWIN_NODE
 ```
 
 These should look familiar to whats in the `stats.txt` file.  The ends of K-mers values are the last nucleotides of the k-mers in that node.
-

@@ -19,7 +19,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 exports.createPages = ({graphql, actions}) => {
     const {createPage} = actions
     const tagTemplate = path.resolve("src/templates/tags.js")
-    const blogPostTemplate = path.resolve("src/templates/blog-post.js")
+    const blogPostTemplate = path.resolve("src/templates/blog-post.tsx")
     const listPage = path.resolve("src/templates/post-list.js")
 
     return new Promise((resolve, reject) => {
