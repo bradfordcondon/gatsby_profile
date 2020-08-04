@@ -6,6 +6,11 @@ import {useSpring, animated} from 'react-spring'
 
 const SpringResults = ({results}) => {
 
+  let length = results.length
+  if (results.length > 3){
+    length = 3
+  }
+
 //https://codesandbox.io/embed/lp80n9z7v9
   const springProps = useSpring({
     from: {
@@ -14,7 +19,7 @@ const SpringResults = ({results}) => {
     },
     to: {
       opacity: results.length > 0 ? 1 : 0,
-      height: results.length * 50
+      height: length * 75
     }
 
   })
@@ -30,6 +35,10 @@ const SpringResults = ({results}) => {
       {
 
         results.map((page, key) => {
+
+          if (key > 2){
+            return null
+          }
           return (<ListGroupItem key={page.id}>
             <Link className="nav-link" to={'/' + page.slug}>
               {page.title}
