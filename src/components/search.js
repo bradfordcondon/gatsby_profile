@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, useState} from 'react'
 import {Index} from 'elasticlunr'
 import {Link} from 'gatsby'
 import {ListGroup, ListGroupItem} from 'reactstrap'
@@ -6,27 +6,26 @@ import {useSpring, animated} from 'react-spring'
 
 const SpringResults = ({results}) => {
 
+  const [showAll, setShowAll] = useState(0);
+
   let length = results.length
-  if (results.length > 3){
+  if (results.length > 3 && !showAll) {
     length = 3
   }
 
-//https://codesandbox.io/embed/lp80n9z7v9
+  //https://codesandbox.io/embed/lp80n9z7v9
   const springProps = useSpring({
     from: {
       height: 0,
       opacity: 0
     },
     to: {
-      opacity: results.length > 0 ? 1 : 0,
-      height: length * 75
+      opacity: results.length > 0
+        ? 1
+        : 0,
+      height: length * 80
     }
-
   })
-  // if (!results || results.length == 0) {
-  //   console.log(results)
-  //   return null
-  // }
 
   return (<animated.div style={springProps}>
     <ListGroup style={{
@@ -35,14 +34,28 @@ const SpringResults = ({results}) => {
       {
 
         results.map((page, key) => {
+          let showButton = false
+          if (key == results.length - 1 && showAll) {
 
-          if (key > 2){
+            showButton = true
+          }
+
+          if (key == 3 && !showAll) {
+            return <button onClick={() => setShowAll(true)}>show all results</button>
+          }
+          if (key > 2 & !showAll) {
             return null
           }
           return (<ListGroupItem key={page.id}>
             <Link className="nav-link" to={'/' + page.slug}>
               {page.title}
             </Link>
+
+            {
+              showButton && <button onClick={() => setShowAll(false)}>
+                  hide
+                </button>
+            }
           </ListGroupItem>)
         })
       }
