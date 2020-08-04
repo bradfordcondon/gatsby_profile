@@ -1,7 +1,7 @@
 import React, {Component, useState} from 'react'
 import {Index} from 'elasticlunr'
 import {Link} from 'gatsby'
-import {ListGroup, ListGroupItem} from 'reactstrap'
+import {ListGroup, ListGroupItem, Button} from 'reactstrap'
 import {useSpring, animated} from 'react-spring'
 
 const SpringResults = ({results}) => {
@@ -11,6 +11,11 @@ const SpringResults = ({results}) => {
   let length = results.length
   if (results.length > 3 && !showAll) {
     length = 3
+  }
+  let height = length * 80
+
+  if (results.length > 3){
+    height = height + 50
   }
 
   //https://codesandbox.io/embed/lp80n9z7v9
@@ -23,7 +28,7 @@ const SpringResults = ({results}) => {
       opacity: results.length > 0
         ? 1
         : 0,
-      height: length * 80
+      height: height
     }
   })
 
@@ -41,22 +46,27 @@ const SpringResults = ({results}) => {
           }
 
           if (key == 3 && !showAll) {
-            return <button onClick={() => setShowAll(true)}>show all results</button>
+            return <Button onClick={() => setShowAll(true)}>show all</Button>
           }
           if (key > 2 & !showAll) {
             return null
           }
-          return (<ListGroupItem key={page.id}>
+          return (
+            <>
+            <ListGroupItem key={page.id}>
             <Link className="nav-link" to={'/' + page.slug}>
               {page.title}
             </Link>
+          </ListGroupItem>
+          {
+            showButton &&
 
-            {
-              showButton && <button onClick={() => setShowAll(false)}>
-                  hide
-                </button>
-            }
-          </ListGroupItem>)
+            <Button id="hide-button" onClick={() => setShowAll(false)}>
+                hide
+              </Button>
+          }
+
+        </>)
         })
       }
     </ListGroup>
