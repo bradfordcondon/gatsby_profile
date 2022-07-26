@@ -99,6 +99,7 @@ export default class Search extends Component {
   search = evt => {
     const query = evt.target.value
     this.index = this.getOrCreateIndex()
+    console.log(this.index)
     let results = this.index.search(query, {})
     // Map over each ID and return the full document
       .map(({ref}) => this.index.documentStore.getDoc(ref))
