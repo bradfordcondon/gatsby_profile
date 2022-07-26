@@ -1,7 +1,7 @@
 {
   "name": "bcondon-website",
   "description": "Bradford Condon Blog",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Bradford Condon <bradford.condon@gmail.com>",
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.1.1",
