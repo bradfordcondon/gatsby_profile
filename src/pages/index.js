@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import {
@@ -15,22 +15,14 @@ import {
 export default page => {
   const data = page.data
 
-  const colorBadge = {
-    drupal: 'primary',
-    tripal: 'success',
-    documentation: 'danger',
-    chado: 'info',
-    databases: 'primary',
-    bioinformatics: 'light',
-    'web-dev': 'warning',
-    'travis-ci': 'dark',
-    d3: 'success',
-    mysql: 'info',
-    sublime: 'primary',
-    notes: 'warning',
-    testing: 'light',
-    tips: 'light',
-  }
+
+  const badgeTypes = [
+    'primary', 'success', 'danger', 'info', 'light', 'dark', 'warning'
+  ]
+
+  const [badgeMap, setBadge] = useState({});
+
+
 
   return (
     <Layout>
@@ -70,10 +62,14 @@ export default page => {
                     <div className={'float-right'}>
                       {node.frontmatter.tags
                         ? node.frontmatter.tags.map(function(name, index) {
-                            let color = colorBadge[name]
-                              ? colorBadge[name]
-                              : 'secondary'
-
+                          let color = null
+                          if (!badgeMap[name]){
+                            color =  badgeTypes[Math.floor(Math.random()*badgeTypes.length)];
+                            badgeMap[name] = color
+                            setBadge(badgeMap)
+                          } else {
+                            color = badgeMap[name]
+                          }
                             return (
                               <Badge
                                 key={index}

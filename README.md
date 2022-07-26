@@ -4,4 +4,5 @@ Because I have.  I'd love to change that, but I'm tired.
 
 https://mpolinowski.github.io/gatsby-reactstrap/
 
+To do a watch build: `npm run develop`
 To deploy changes, execute:  `npm run deploy`
