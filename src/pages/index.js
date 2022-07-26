@@ -7,9 +7,8 @@ import {
   Row,
   Card,
   CardImg,
-  CardTitle,
   CardBody,
-  CardSubtitle,
+  ,
   CardText,
 } from 'reactstrap'
 
