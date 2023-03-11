@@ -11,11 +11,11 @@ permalink: cv.html
   Bradford Condon, PhD
 </p>
 
-## Education
+# Education
 - August 2013, PhD in Plant Pathology & Plant-Microbe Interactions, Cornell University, Ithaca, NY
 - May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
 
-# Bradford the Web Developer and Technologist (2019-present)
+# Software Developer (2019-present)
 
 ## Employment
 
@@ -36,7 +36,7 @@ permalink: cv.html
 
 See academic section below for archived technology expertise and language (such as R, Perl, and Ruby).
 
-# Bradford the Scientist and Academic (2003-2019)
+# Scientist (2003-2019)
 
 ## Employment
 
@@ -272,7 +272,3 @@ Ohm, R. A., Feau, N., Henrissat, B., Schoch, C. L., Horwitz, B. A., Barry, K. W.
 Turgeon, B. G., **Condon, B. J**., Liu, J., & Zhang, N. (2010). Protoplast transformation of filamentous fungi. _Methods in Molecular Biology (Clifton, N.J.)_, _638_(Chapter 1), 3–19. doi:10.1007/978-1-60761-611-5_1
 
 Almeida, N. F., Yan, S., Lindeberg, M., Studholme, D. J., Schneider, D. J., **Condon, B. J.,** et al. (2009). A draft genome sequence of _Pseudomonas syringae_ pv. tomato T1 reveals a type III effector repertoire significantly divergent from that _of Pseudomonas syringae_ pv. tomato DC3000. _Molecular Plant-Microbe Interactions : MPMI_, _22_(1), 52–62. doi:10.1094/MPMI-22-1-0052
-
-# Bradford The Child (The 80's-2003)
-
-- Born and raised in Connecticut

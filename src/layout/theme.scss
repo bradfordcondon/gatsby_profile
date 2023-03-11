@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600');
-@import '~react-md/src/scss/react-md';
 
-$md-primary-color: $md-grey-400;
-$md-secondary-color: $md-red-800;
-$md-tertiary-color: $md-grey-300;
+ $md-primary-color: #FF7043;
+ $md-secondary-color: #D84315;
+ $md-tertiary-color: #90A4AE;
 
 .main-container,
 .darker-background {
@@ -11,7 +10,7 @@ $md-tertiary-color: $md-grey-300;
 }
 
 a:link {
-  //color: $md-secondary-color;
+  color: $md-secondary-color;
   text-decoration: none;
 }
 

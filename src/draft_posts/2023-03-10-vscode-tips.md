@@ -21,7 +21,6 @@ Hopping instances in AWS in my day-to-day really limited my IDE useage. It just 
 
 
 
-
 # Linting
 
 ### PHP

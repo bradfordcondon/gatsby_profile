@@ -10,7 +10,13 @@ body {
     margin: 0;
 }
 
-@import '~react-md/src/scss/react-md';
-@import 'theme.scss';
+.jumbotron{
 
-@include react-md-everything;
+//    @extend .rounded;
+//    @extend .px-3;
+//    @extend .px-sm-4;
+//    @extend .py-3;
+//    @extend .py-sm-5;
+}
+
+@import 'theme.scss';

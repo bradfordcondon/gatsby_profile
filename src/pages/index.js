@@ -8,21 +8,17 @@ import {
   Card,
   CardImg,
   CardBody,
-  CardSubtitle,
+
   CardText,
 } from 'reactstrap'
 
 export default page => {
   const data = page.data
-
-
   const badgeTypes = [
     'primary', 'success', 'danger', 'info', 'light', 'dark', 'warning'
   ]
 
   const [badgeMap, setBadge] = useState({});
-
-
 
   return (
     <Layout>

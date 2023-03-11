@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import {Nav, NavItem, NavLink} from "reactstrap";
 
 function isActive(path) {
