@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { css } from 'react-emotion'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import {
