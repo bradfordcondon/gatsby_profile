@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import {
@@ -8,29 +8,26 @@ import {
   Card,
   CardImg,
   CardBody,
-  CardSubtitle,
+
   CardText,
 } from 'reactstrap'
 
 export default page => {
   const data = page.data
-
-
   const badgeTypes = [
     'primary', 'success', 'danger', 'info', 'light', 'dark', 'warning'
   ]
 
   const [badgeMap, setBadge] = useState({});
 
-
-
   return (
     <Layout>
       <Row>
-        <Col md="3">
-          <Card className={'mb-4'}>
+        <Col md="3" className ="d-sm-none d-md-block"> 
+        {/* Above d-sm-none should hide it on small, but isnt working */}
+          <Card  className={'mb-4'}>
             <CardImg
-              style={{ maxWidth: 250, margin: '0 auto' }}
+              style={{  margin: '0 auto', maxWidth: 250 }}
               src="/img/condon_face.jpg"
               alt="Bradford Condon PhD"
             />
@@ -38,6 +35,20 @@ export default page => {
               <CardText>
                 Hello! I am a full stack web/mobile developer, data scientist,
                 and bionformatician.
+              </CardText>
+            </CardBody>
+          </Card>
+          <Card className={'mb-4'}>
+            <a href="https://www.cabem.com/">
+              <CardImg
+                style={{margin: '0 auto' }}
+                src="/img/cabem.png"
+                alt="CABEM TECHNOLOGIES LOGO"
+              />
+            </a>
+            <CardBody>
+              <CardText>
+                I am currently the the Director of Technologies at CABEM Technologies.  CABEM is proudly in-house and US-based: please no soliciting.
               </CardText>
             </CardBody>
           </Card>
@@ -61,25 +72,25 @@ export default page => {
                     <span className="mr-2">{node.frontmatter.date}</span>
                     <div className={'float-right'}>
                       {node.frontmatter.tags
-                        ? node.frontmatter.tags.map(function(name, index) {
+                        ? node.frontmatter.tags.map(function (name, index) {
                           let color = null
-                          if (!badgeMap[name]){
-                            color =  badgeTypes[Math.floor(Math.random()*badgeTypes.length)];
+                          if (!badgeMap[name]) {
+                            color = badgeTypes[Math.floor(Math.random() * badgeTypes.length)];
                             badgeMap[name] = color
                             setBadge(badgeMap)
                           } else {
                             color = badgeMap[name]
                           }
-                            return (
-                              <Badge
-                                key={index}
-                                style={{ margin: '0 2px' }}
-                                color={color}
-                              >
-                                {name}
-                              </Badge>
-                            )
-                          })
+                          return (
+                            <Badge
+                              key={index}
+                              style={{ margin: '0 2px' }}
+                              color={color}
+                            >
+                              {name}
+                            </Badge>
+                          )
+                        })
                         : ''}
                     </div>
                   </div>

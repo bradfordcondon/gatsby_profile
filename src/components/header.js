@@ -1,13 +1,5 @@
 import React from 'react'
 import { Link, StaticQuery } from 'gatsby'
-import {
-  Jumbotron,
-  InputGroup,
-  InputGroupAddon,
-  Form,
-  Input,
-  Button,
-} from 'reactstrap'
 
 import Search from './search'
 
@@ -24,8 +16,8 @@ const Header = () => (
       }
     `}
     render={data => (
-      <Jumbotron
-        className={'pb-0 pt-3 border-bottom'}
+      <div
+        className={'jumbotron pb-0 pt-3 border-bottom'}
         style={{ borderColor: '#ccc' }}
       >
         <div className="container">
@@ -49,7 +41,7 @@ const Header = () => (
           </div>
           <Navcomponent />
         </div>
-      </Jumbotron>
+      </div>
     )}
   />
 )
