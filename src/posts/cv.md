@@ -12,16 +12,33 @@ permalink: cv.html
 </p>
 
 ## Education
+- August 2013, PhD in Plant Pathology & Plant-Microbe Interactions, Cornell University, Ithaca, NY
+- May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
 
-August 2013, PhD in Plant Pathology & Plant-Microbe Interactions, Cornell University, Ithaca, NY
-
-May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
+# Bradford the Web Developer and Technologist (2019-present)
 
 ## Employment
 
-* April 2019 to present: Full stack Software Developer, [CABEM technologies](https://www.cabem.com/)
+* October 2022 to present: Director of Technology, [CABEM Technologies](https://www.cabem.com/)
+> Guide technology decisions across all client projects in CABEM.  Piloted automated testing, documentation, and publish harnesses (PHPUnit, Jest, Jest-axe, react-styleguidist, doxygen, selenium, gitlab's npm/composer package registry). Gather requirements from clients, write and manage jira tickets to lead launching two custom, enterprise level applications, while implementing the most critical frontend, backend, and infrastructure components.
 
-> Develop and implement OAS 3.0 compliant API using PHP Slim and custom frameworks.  Design and build UIs with React. Manage support and development workflow with gitlab and Jira.
+
+* April 2019 to present: Full stack Software Developer, [CABEM Technologies](https://www.cabem.com/)
+
+> Develop and implement OAS 3.0 compliant API using PHP Slim and custom frameworks.  Design and build UIs with React. Manage support and development workflow with gitlab and Jira. Pioneer transition from manual to automated deployments using AWS CodeBuild, CodeDeploy, via CodePipelines.
+
+## Technologies
+
+- Application builds with AWS: lambda, Step functions, CodeBuild, CodePipeline, CodeDeploy.
+- Networking with AWS: Route 53, ALB, ELB, EC2, ASG.
+- Backend: PHP, PHPSlim, Laravel subcomponents, Apache, Symfony, Python.
+- Frontend: React, Redux, Axios, CSS, SCSS, Bootstrap.
+
+See academic section below for archived technology expertise and language (such as R, Perl, and Ruby).
+
+# Bradford the Scientist and Academic (2003-2019)
+
+## Employment
 
 * September 2018 to April 2019: IT Specialist III, University of Tennessee
 
@@ -30,7 +47,6 @@ May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
 * February 2017 to September 2018: Postdoctoral associate, Department of Entomology and Plant Pathology, University of Tennessee, Knoxville.
 
 >I develop the Hardwood Genomics Web (HWG), a web site that houses genetic and genomic data from a variety of hardwood tree species.  I contribute to Tripal, an open source genomic database and website framework. I also authored the mobile app TreeSnap, which allows citizens to partner with scientists to track and study trees.  I serve as the biological point person for undergraduate and graduate lab programmers to help them understand the underlying database model.
-
 
 * January 2016 to January 2017: Postdoctoral associate, Department of Plant Pathology, University of Kentucky.
 
@@ -44,6 +60,8 @@ May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
 
 >Performed genetic and genomic studies using the model fungal phytopathogen Cochliobolus heterostrophus.  Acted as lab co-manager in charge of ordering and hiring/training/managing undergraduate students.
 
+
+
 ## Accomplishments
 
 * [Tripal](tripal.info) project manager.
@@ -51,6 +69,7 @@ May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
    - Formed a governance structure with contribution guidelines and requirements.
 * Upgraded [HardwoodGenomics](https://hardwoodgenomics.org/) to Tripal 3, performed bioinformatic analyses and uploaded new data to site.
 * Co-developer of [TreeSnap](https://treesnap.org/), mobile citizen science app.
+
 
 
 ## Selected Software
@@ -75,6 +94,7 @@ May 2007, BA in Biology and Religion, Oberlin College, Oberlin, OH
 * [Tripal Alchemist](https://github.com/statonlab/tripal_alchemist)
   - Enables bulk transformation of Tripal entities from one type to another
   - DOI: 10.5281/zenodo.1187120
+
 
 
 #### TreeSnap
@@ -252,3 +272,7 @@ Ohm, R. A., Feau, N., Henrissat, B., Schoch, C. L., Horwitz, B. A., Barry, K. W.
 Turgeon, B. G., **Condon, B. J**., Liu, J., & Zhang, N. (2010). Protoplast transformation of filamentous fungi. _Methods in Molecular Biology (Clifton, N.J.)_, _638_(Chapter 1), 3–19. doi:10.1007/978-1-60761-611-5_1
 
 Almeida, N. F., Yan, S., Lindeberg, M., Studholme, D. J., Schneider, D. J., **Condon, B. J.,** et al. (2009). A draft genome sequence of _Pseudomonas syringae_ pv. tomato T1 reveals a type III effector repertoire significantly divergent from that _of Pseudomonas syringae_ pv. tomato DC3000. _Molecular Plant-Microbe Interactions : MPMI_, _22_(1), 52–62. doi:10.1094/MPMI-22-1-0052
+
+# Bradford The Child (The 80's-2003)
+
+- Born and raised in Connecticut

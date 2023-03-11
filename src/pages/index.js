@@ -41,6 +41,13 @@ export default page => {
               </CardText>
             </CardBody>
           </Card>
+          <Card className={'mb-4'}>
+            <CardBody>
+              <CardText>
+                I am currently the the Director of Technologies at CABEM Technologies.  CABEM is proudly in-house and US-based: please no soliciting.
+              </CardText>
+            </CardBody>
+          </Card>
         </Col>
 
         <Col md="9">
