@@ -3,11 +3,13 @@
  $md-primary-color: #FF7043;
  $md-secondary-color: #D84315;
  $md-tertiary-color: #90A4AE;
+ $md-jumbotron: #FFEBEE;
 
 .main-container,
 .darker-background {
   background-color: $md-tertiary-color;
 }
+
 
 a:link {
   color: $md-secondary-color;

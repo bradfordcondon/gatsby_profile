@@ -1,3 +1,5 @@
+@import 'theme.scss';
+
 * {
     box-sizing: border-box;
 }
@@ -11,6 +13,10 @@ body {
 }
 
 .jumbotron{
+    padding-top: 50px;
+    background-color: $md-jumbotron;
+    border-radius: 25px;
+    margin-bottom: 10px;
 
 //    @extend .rounded;
 //    @extend .px-3;
@@ -19,4 +25,3 @@ body {
 //    @extend .py-sm-5;
 }
 
-@import 'theme.scss';
