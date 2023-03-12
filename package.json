@@ -40,6 +40,9 @@
     "typescript": "^3.9.7",
     "typography": "^0.16.17"
   },
+  "overrides": {
+    "loader-utils": "^2.0.3"
+  },
   "keywords": [
     "gatsby"
   ],
