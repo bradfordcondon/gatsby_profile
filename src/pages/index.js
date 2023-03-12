@@ -113,7 +113,7 @@ export default page => {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      limit: 6
+      limit: 3
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       totalCount

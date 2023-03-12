@@ -7,9 +7,7 @@ import {
   Row,
   Card,
   CardImg,
-  CardTitle,
   CardBody,
-  CardSubtitle,
   CardText,
   Nav,
   NavItem,
@@ -18,8 +16,6 @@ import {
 
 export default class PostList extends Component {
   render() {
-    console.log(this.props)
-
     //export default(page) => {
     //  const data = page.data
     const data = this.props.data
