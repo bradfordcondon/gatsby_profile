@@ -55,7 +55,7 @@
   "devDependencies": {
     "@andrew-codes/gatsby-plugin-elasticlunr-search": "^1.0.4",
     "gatsby-plugin-sass": "^6.7.0",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^5.0.0",
     "prettier": "^1.14.2"
   },
   "repository": {
