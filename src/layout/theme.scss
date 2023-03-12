@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600');
 
- $md-primary-color: #FF7043;
- $md-secondary-color: #D84315;
- $md-tertiary-color: #90A4AE;
- $md-jumbotron: #FFEBEE;
+
+ $md-primary-color: #96C2DB;
+ $md-secondary-color: #5da1c7;
+ $md-tertiary-color: #c7b85d;
+ $md-jumbotron: $md-primary-color;
 
 .main-container,
 .darker-background {
@@ -25,4 +26,17 @@ h6,
 p, button, input, textarea, html,
 body {
   font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+
+
+.nav-tabs  {
+
+  background-color: $md-tertiary-color;
+  .nav-link.active {
+
+    background-color: $md-secondary-color;
+
+  }
+
 }

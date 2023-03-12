@@ -1,4 +1,5 @@
 @import 'theme.scss';
+@import 'revealer.scss';
 
 * {
     box-sizing: border-box;
@@ -12,16 +13,15 @@ body {
     margin: 0;
 }
 
-.jumbotron{
-    padding-top: 50px;
-    background-color: $md-jumbotron;
-    border-radius: 25px;
-    margin-bottom: 10px;
 
-//    @extend .rounded;
-//    @extend .px-3;
-//    @extend .px-sm-4;
-//    @extend .py-3;
-//    @extend .py-sm-5;
+#bc-header {
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: $md-secondary-color;
+
+
 }
+
+
 

@@ -13,7 +13,11 @@ div .mobile-fix {
   float: right;
   input {
     margin-left: 2px;
-
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
   }
   li:first-child {
     margin-top: 5px;
@@ -27,3 +31,4 @@ div .mobile-fix {
 
 
 }
+
