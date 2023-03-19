@@ -17,8 +17,7 @@ const Header = () => (
     `}
     render={data => (
       <div
-        className={'jumbotron pb-0 pt-3 border-bottom'}
-        style={{ borderColor: '#ccc' }}
+        className={'jumbotron pb-0 pt-3'}
       >
         <div className="container">
           <div className="d-flex justify-content-between">
