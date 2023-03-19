@@ -1,15 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600');
 
- $md-primary-color: #FF7043;
- $md-secondary-color: #D84315;
- $md-tertiary-color: #90A4AE;
- $md-jumbotron: #FFEBEE;
+ 
+ $theme-one: #4CE0AD;
+ $theme-two: #174C4F;
+ $theme-three: #B4FAE1;
+ $theme-four: #21614B;
 
+
+
+ $md-primary-color: $theme-one;
+ $md-secondary-color:$theme-two;
+ $md-tertiary-color: $theme-three;
+ $md-jumbotron: $theme-four;
+
+
+ .header-img{
+  width: 100px;
+ }
 .main-container,
 .darker-background {
   background-color: $md-tertiary-color;
 }
+.card {
 
+  //background-color: lighten($theme-three, 3);
+
+}
+.card-header {
+
+ // background-color: lighten($theme-one, 5);
+
+}
 
 a:link {
   color: $md-secondary-color;

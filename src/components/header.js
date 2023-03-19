@@ -19,8 +19,12 @@ const Header = () => (
       <div
         className={'jumbotron pb-0 pt-3'}
       >
-        <div className="container">
-          <div className="d-flex justify-content-between">
+
+        <div className="container header-container">
+            <div className="d-flex justify-content-between" > 
+            <img className="header-img .ml-auto" src="img/condon_logo_clear.png"></img>
+
+            
             <Link
               to="/"
               style={{
@@ -40,6 +44,7 @@ const Header = () => (
           </div>
           <Navcomponent />
         </div>
+        
       </div>
     )}
   />
