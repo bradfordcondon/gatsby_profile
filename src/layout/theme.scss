@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600');
 
  
- $theme-one: #4CE0AD;
- $theme-two: #174C4F;
- $theme-three: #B4FAE1;
- $theme-four: #21614B;
+//  $theme-one: #4CE0AD;
+//  $theme-two: #174C4F;
+//  $theme-three: #B4FAE1;
+//  $theme-four: #21614B;
 
+
+
+ $theme-one: #A5424A;
+ $theme-two: #366273;
+ $theme-three: #BF3F3F;
+ $theme-four: #BF9898;
 
 
  $md-primary-color: $theme-one;
@@ -23,12 +29,12 @@
 }
 .card {
 
-  //background-color: lighten($theme-three, 3);
+  background-color: lighten($theme-three, 3);
 
 }
 .card-header {
 
- // background-color: lighten($theme-one, 5);
+ background-color: lighten($theme-one, 5);
 
 }
 

@@ -32,4 +32,5 @@ gatsby-image@3.11.0: gatsby-image is now gatsby-plugin-image
 After the above update of doom, i needed to add an icon to my `package.json`, I went ahead and grabbed a [free one from icons8](https://icons8.com/) .I needed it because of `gatsby-plugin-manifest` which appears to provide features very far removed from necessary for a personal blog site.
 
 
+node-sass bindingi ssues:  For some reason npm run develop didntw ork, and i needed to rn npm run start.
 
