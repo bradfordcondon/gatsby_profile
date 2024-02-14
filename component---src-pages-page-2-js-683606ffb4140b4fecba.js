@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkbcondon_website=self.webpackChunkbcondon_website||[]).push([[304],{4084:function(e,t,n){n.r(t);var c=n(1504),o=n(4056),a=n(416);t.default=()=>c.createElement(a.c,null,c.createElement(o.Link,{to:"/"},"Go back to the homepage"))}}]);
+//# sourceMappingURL=component---src-pages-page-2-js-683606ffb4140b4fecba.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkbcondon_website=self.webpackChunkbcondon_website||[]).push([[880],{1580:function(e,t,n){n.r(t);var l=n(1504),r=n(416);t.default=e=>{let{data:t}=e;const n=t.markdownRemark;return l.createElement(r.c,null,l.createElement("div",null,l.createElement("h1",null,n.frontmatter.title),l.createElement("div",{dangerouslySetInnerHTML:{__html:n.html}})))}}}]);
+//# sourceMappingURL=component---src-templates-blog-post-tsx-8973762c71c107fb7662.js.map
